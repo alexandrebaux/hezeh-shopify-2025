@@ -1,0 +1,11 @@
+.product__description > p > em:first-child,
+.product__description > p > strong:first-child {
+
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 120%;
+        letter-spacing: 5%;
+        text-transform: uppercase;
+        color:  #A19C8C;
+
+}
