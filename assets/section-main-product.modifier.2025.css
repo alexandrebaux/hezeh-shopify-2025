@@ -1,23 +1,52 @@
+
+/* Load Schibsted Grotesk font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+
+/* Override product page */
 .product__subtitle,
-.product__content-under-price .metafield-rich_text_field > p > em:first-child,
 .product__content-under-price .metafield-rich_text_field > p > strong:first-child,
-.product__description > p > em:first-child,
 .product__description > p > strong:first-child {
 
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 120%;
-        letter-spacing: 5%;
-        text-transform: uppercase;
-        color:  #A19C8C;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    color:  #A19C8C;
 
 }
+.product__content-under-price p {
+  margin: 0.5rem 0;
+}
+.product__content-under-price a {
 
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-decoration-skip-ink: auto;
+
+  color: rgba(var(--color-foreground), 1);
+}
 
 .product__tax {
-        display: none;
+  display: none;
 }
 
 .price .price-item {
-        font-size: 12px;
+  font-size: 12px;
+}
+
+.product__description.rte ul,
+.product__description.rte ol {
+  padding-left: 0;
+  list-style-type: none;
 }
