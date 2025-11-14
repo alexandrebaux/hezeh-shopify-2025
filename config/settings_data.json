@@ -12,7 +12,7 @@
     "logo": "shopify://shop_images/signature-c3_4x_copy.png",
     "logo_width": 140,
     "favicon": "shopify://shop_images/icone-c3_4x_9acccb75-e2db-450f-b46d-73340eab476d.png",
-    "type_header_font": "newsreader_n4",
+    "type_header_font": "newsreader_n3",
     "heading_scale": 120,
     "type_body_font": "newsreader_n4",
     "body_scale": 105,
@@ -206,7 +206,7 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#FDFBF5",
+          "background": "#fdfbf5",
           "background_gradient": "#FDFBF5",
           "text": "#212121",
           "button": "#fdfbf5",
