@@ -16,12 +16,12 @@
           "type": "title",
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "price": {
           "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
           "settings": {}
         },
         "variant_picker": {
@@ -51,8 +51,8 @@
       },
       "block_order": [
         "title",
-        "description",
         "price",
+        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

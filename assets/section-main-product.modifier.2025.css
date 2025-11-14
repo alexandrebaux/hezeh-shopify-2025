@@ -9,3 +9,11 @@
         color:  #A19C8C;
 
 }
+
+.product__tax {
+        display: none;
+}
+
+.price .price-item {
+        font-size: 12px;
+}
