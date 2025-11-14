@@ -1,0 +1,172 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_2_27d9e436-baeb-404d-a36a-adb33133c379.png",
+            "heading": "",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "Decouvrir la collection H.02-2",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand."
+      }
+    },
+    "rich_text_EWArWg": {
+      "type": "rich-text",
+      "blocks": {
+        "text_YC3rVH": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Pièces d'exception faites à la main à Paris.</h2><h5>Concues dans un atelier à taille humaine, chaque création est réalisée sur précommande, utilisant des tissus upcyclés exceptionnels et teinture naturelle en café, thé et brou de noix. .</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "text_YC3rVH"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_AkP6dw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J9TCEJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "H.02-2 - Édition d’été",
+            "heading_size": "h2"
+          }
+        },
+        "text_NH4JtL": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Une capsule estivale et minérale. Inspirée d’éléments naturels et teinte à la main avec des végétaux, cette capsule est totalement exclusive. Conçues en collaboration avec l’artiste plasticienne Catherine Cappeau, les pièces mettent en lumière les nuances du grès et des coupes épurées, pensées pour révéler la beauté brute des matières et le temps long du geste artisanal.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_J9TCEJ",
+        "text_NH4JtL"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_grid_E9DxB6": {
+      "type": "image-grid",
+      "settings": {
+        "image1": "shopify://shop_images/1_e84a23b8-38e0-413b-8a37-9f8120da6a15.png",
+        "image2": "shopify://shop_images/3_b42a737f-5715-4dcd-a343-6704eb4b1c92.png",
+        "image3": "shopify://shop_images/2_88705966-82bb-44da-bb5e-fb9771c00ec6.png",
+        "image4": "shopify://shop_images/4_84022a84-2355-4b97-8b9c-02a35f5e8abc.png"
+      }
+    },
+    "newsletter_Jfj9at": {
+      "type": "newsletter",
+      "blocks": {
+        "paragraph_pVMBeK": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<h5>Inscrivez-vous pour recevoir des informations sur les nouvelles collections, les invitations et les humeurs.</h5>"
+          }
+        },
+        "email_form_cdxbFd": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "paragraph_pVMBeK",
+        "email_form_cdxbFd"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "rich_text_EWArWg",
+    "featured-collection",
+    "rich_text_AkP6dw",
+    "image_grid_E9DxB6",
+    "newsletter_Jfj9at"
+  ]
+}

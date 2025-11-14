@@ -1,0 +1,90 @@
+{% schema %}
+{
+  "name": "Custom Tiles",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Tiles",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="custom-tiles-wrapper">
+  <div class="custom-tiles">
+    {% if section.settings.image_1 %}
+      <div class="tile"><img src="{{ section.settings.image_1 | img_url: '300x300' }}" alt="Tile 1"></div>
+    {% endif %}
+    {% if section.settings.image_2 %}
+      <div class="tile"><img src="{{ section.settings.image_2 | img_url: '300x300' }}" alt="Tile 2"></div>
+    {% endif %}
+    {% if section.settings.image_3 %}
+      <div class="tile"><img src="{{ section.settings.image_3 | img_url: '300x300' }}" alt="Tile 3"></div>
+    {% endif %}
+    {% if section.settings.image_4 %}
+      <div class="tile"><img src="{{ section.settings.image_4 | img_url: '300x300' }}" alt="Tile 4"></div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+.custom-tiles-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.custom-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+  max-width: 600px; /* Adjust the max-width as needed */
+  aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+}
+
+.custom-tiles .tile {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Maintain square shape */
+  overflow: hidden;
+}
+
+.custom-tiles .tile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .custom-tiles {
+    max-width: 100%;
+  }
+}
+</style>

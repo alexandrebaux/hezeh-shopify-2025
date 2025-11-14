@@ -1,0 +1,122 @@
+{% schema %}
+{
+  "name": "Image Grid",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "Image 4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="custom-image-grid">
+  <div class="image-grid">
+    {% if section.settings.image1 %}
+      <div class="image-wrapper">
+        <picture>
+          <source srcset="{{ section.settings.image1 | img_url: '2048x2048' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.settings.image1 | img_url: '2048x2048' }}" alt="Image 1" loading="lazy">
+        </picture>
+      </div>
+    {% endif %}
+    {% if section.settings.image2 %}
+      <div class="image-wrapper">
+        <picture>
+          <source srcset="{{ section.settings.image2 | img_url: '2048x2048' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.settings.image2 | img_url: '2048x2048' }}" alt="Image 2" loading="lazy">
+        </picture>
+      </div>
+    {% endif %}
+    {% if section.settings.image3 %}
+      <div class="image-wrapper">
+        <picture>
+          <source srcset="{{ section.settings.image3 | img_url: '2048x2048' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.settings.image3 | img_url: '2048x2048' }}" alt="Image 3" loading="lazy">
+        </picture>
+      </div>
+    {% endif %}
+    {% if section.settings.image4 %}
+      <div class="image-wrapper">
+        <picture>
+          <source srcset="{{ section.settings.image4 | img_url: '2048x2048' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.settings.image4 | img_url: '2048x2048' }}" alt="Image 4" loading="lazy">
+        </picture>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+
+<style>
+  .custom-image-grid {
+    padding: 20px;
+  }
+
+  .custom-image-grid .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0; /* Remove the gap between images */
+  }
+
+  .custom-image-grid .image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* This makes the wrapper a square */
+    overflow: hidden;
+  }
+
+  .custom-image-grid .image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the entire grid cell */
+  }
+
+  @media(min-width: 768px) {
+    .custom-image-grid .image-grid {
+      display: flex;
+    }
+
+    .custom-image-grid .image-wrapper {
+      width: 25%; /* Ensure each image takes up 25% of the width */
+      padding-bottom: 0; /* Remove padding to stop square aspect ratio */
+      height: 0; /* Remove height so it can be set by flexbox */
+      padding-top: 25%; /* Set height to be 25% of the width, keeping it square */
+      position: relative; /* Required for the absolutely positioned img */
+    }
+
+    .custom-image-grid .image-wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+</style>
