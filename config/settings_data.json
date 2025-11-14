@@ -206,8 +206,8 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#f9f0de",
-          "background_gradient": "",
+          "background": "#FDFBF5",
+          "background_gradient": "#FDFBF5",
           "text": "#212121",
           "button": "#fdfbf5",
           "button_label": "#1b160b",
