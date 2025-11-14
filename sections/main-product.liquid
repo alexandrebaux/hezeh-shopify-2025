@@ -101,6 +101,12 @@
                     </h2>
                   </a>
                 </div>
+              {%- when 'subtitle' -%}
+                {%- if product.metafields.custom.subtitle != blank -%}
+                  <div class="product__subtitle{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+                    {{ product.metafields.custom.subtitle | metafield_tag }}
+                  </div>
+                {%- endif -%}
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -130,6 +136,12 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
+              {%- when 'content_under_price' -%}
+                {%- if product.metafields.custom.content_under_price != blank -%}
+                  <div class="product__content-under-price{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %} rte" {{ block.shopify_attributes }}>
+                    {{ product.metafields.custom.content_under_price | metafield_tag }}
+                  </div>
+                {%- endif -%}
               {%- when 'inventory' -%}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -793,9 +805,63 @@
       "limit": 1
     },
     {
+      "type": "subtitle",
+      "name": "Product Subtitle",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "Body"
+            },
+            {
+              "value": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "value": "uppercase",
+              "label": "Uppercase"
+            }
+          ],
+          "default": "subtitle",
+          "label": "Text style"
+        }
+      ]
+    },
+    {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
       "limit": 1
+    },
+    {
+      "type": "content_under_price",
+      "name": "Content under price",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "Body"
+            },
+            {
+              "value": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "value": "uppercase",
+              "label": "Uppercase"
+            }
+          ],
+          "default": "body",
+          "label": "Text style"
+        }
+      ]
     },
     {
       "type": "sku",

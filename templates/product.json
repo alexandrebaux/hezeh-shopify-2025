@@ -16,8 +16,16 @@
           "type": "title",
           "settings": {}
         },
+        "subtitle": {
+          "type": "subtitle",
+          "settings": {}
+        },
         "price": {
           "type": "price",
+          "settings": {}
+        },
+        "content_under_price": {
+          "type": "content_under_price",
           "settings": {}
         },
         "description": {
@@ -51,12 +59,14 @@
       },
       "block_order": [
         "title",
+        "subtitle",
         "price",
-        "description",
+        "content_under_price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "share"
+        "share",
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
