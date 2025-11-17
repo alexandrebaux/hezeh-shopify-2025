@@ -14,13 +14,18 @@
 
 <share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }}>
   <button class="share-button__button hidden">
-    {% render 'icon-share' %}
     {{ block.settings.share_label | escape }}
+    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.353516 0.353516L6.85352 6.85352L13.3535 0.353516" stroke="#212121"/>
+    </svg>
+
   </button>
   <details id="Details-{{ block.id }}-{{ section.id }}">
     <summary class="share-button__button">
-      {% render 'icon-share' %}
       {{ block.settings.share_label | escape }}
+      <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.353516 0.353516L6.85352 6.85352L13.3535 0.353516" stroke="#212121"/>
+      </svg>
     </summary>
     <div class="share-button__fallback motion-reduce">
       <div class="field">
