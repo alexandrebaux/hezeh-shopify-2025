@@ -10,6 +10,18 @@
   text-align: var(--text-alignment);
 }
 
+.card__collection {
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: block;
+
+}
+
 .card:not(.ratio) {
   display: flex;
   flex-direction: column;
@@ -303,6 +315,12 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+
 }
 
 .card__heading:last-child {
@@ -402,8 +420,10 @@
   }
 
   .underline-links-hover:hover a {
+    /*
     text-decoration: underline;
     text-underline-offset: 0.3rem;
+    */
   }
 }
 
@@ -476,6 +496,13 @@
 
 .card-information > .price {
   color: rgb(var(--color-foreground));
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+
 }
 
 .card--horizontal .card-information > .price {
