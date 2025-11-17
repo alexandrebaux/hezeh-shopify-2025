@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(3rem, 5vw, 100rem);
+  gap: clamp(3rem, 10vw, 100rem);
   margin: 2rem 0 5rem;
 }
 
