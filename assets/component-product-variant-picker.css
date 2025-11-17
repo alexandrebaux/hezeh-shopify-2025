@@ -3,12 +3,9 @@ variant-selects {
   gap: 1rem;
   max-width: 100%;
 }
+
 variant-selects .product-form__input {
   flex: 0 1 150px;
-}
-
-variant-selects .product-form__input .form__label {
-  /* display: none;*/
 }
 
 .product--no-media .product-form__input--pill,

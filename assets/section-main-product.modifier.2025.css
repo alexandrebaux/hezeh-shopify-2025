@@ -95,5 +95,24 @@ product-info .product-form__buttons button {
   border-width: 1px;
   gap: 10px;
   opacity: 1;
-  background: #E4DFD1;
+}
+
+product-info .product-form__quantity {
+ margin-top: 0;
+}
+
+product-info.product__info-container > variant-selects {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+product-info .product-form__quantity .form__label,
+product-info .product-form__input .form__label {
+  display: none;
+}
+
+product-info .share-button__button {
+  margin-top: -1rem;
+  padding: 1rem;
+  min-height: initial
 }
