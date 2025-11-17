@@ -1,0 +1,90 @@
+{% comment %}
+  Renders a Swiper slider for products
+  
+  Usage:
+  {% render 'product-slider', products: collection.products %}
+  
+  Accepts:
+  - products: {Array} Array of products to display in the slider
+  - media_aspect_ratio: {String} Aspect ratio for product images
+  - image_shape: {String} Shape of the product images
+  - show_secondary_image: {Boolean} Whether to show secondary image on hover
+  - show_vendor: {Boolean} Whether to show vendor name
+  - show_rating: {Boolean} Whether to show product rating
+{% endcomment %}
+
+<!-- Slider main container -->
+<div class="swiper-container">
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+        
+    <!-- If we need navigation buttons -->
+    <div class="swiper-controls">
+      <div class="swiper-button-prev-custom">
+        <svg width="53" height="17" viewBox="0 0 53 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.70703 0.353516L0.707031 8.35352L8.70703 16.3535" stroke="#212121"/>
+          <path d="M1.5957 8.35352H52.7068" stroke="#212121"/>
+        </svg>
+      </div>
+      <div class="swiper-pagination-custom"></div>
+      <div class="swiper-button-next-custom">
+        <svg width="53" height="17" viewBox="0 0 53 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M44 0.353516L52 8.35352L44 16.3535" stroke="#212121"/>
+          <path d="M51.1113 8.35352H0.000216633" stroke="#212121"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for product_item in products %}
+        <div class="swiper-slide">
+          {% render 'card-product',
+            card_product: product_item,
+            media_aspect_ratio: media_aspect_ratio,
+            image_shape: image_shape,
+            show_secondary_image: show_secondary_image,
+            show_vendor: show_vendor,
+            show_rating: show_rating
+          %}
+        </div>
+      {% endfor %}
+    </div>
+    
+
+
+  </div>
+  <script>
+    (function(sectionElement){
+      
+      // Initialize Swiper
+      var swiper = new Swiper(sectionElement.querySelector('.swiper'), {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: sectionElement.querySelector('.swiper-button-next-custom'),
+          prevEl: sectionElement.querySelector('.swiper-button-prev-custom'),
+          clickable: true,
+        },
+        pagination: {
+          el: sectionElement.querySelector('.swiper-pagination-custom'),
+          clickable: true,
+          type: 'fraction'
+        },
+        breakpoints: {
+          // when window width is >= 640px
+          375: {
+            slidesPerView: {{columns_mobile}},
+            spaceBetween: 20
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: {{columns_desktop}},
+            spaceBetween: 20
+          }
+        }
+      });
+
+    })(document.currentScript.parentNode);
+  </script>
+</div>

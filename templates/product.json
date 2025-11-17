@@ -88,15 +88,15 @@
         "padding_bottom": 0
       }
     },
-    "related-products": {
-      "type": "related-products",
+    "related-products-slider": {
+      "type": "related-products-slider",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Dans la même collection",
         "heading_size": "h1",
         "products_to_show": 6,
         "columns_desktop": 3,
         "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
+        "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -109,6 +109,6 @@
   },
   "order": [
     "main",
-    "related-products"
+    "related-products-slider"
   ]
 }
