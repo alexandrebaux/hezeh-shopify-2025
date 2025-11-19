@@ -1,7 +1,4 @@
 
-/* Load Schibsted Grotesk font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
-
 /* Override product page */
 .product-media-container {
    width: 100%;

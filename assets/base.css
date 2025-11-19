@@ -1,3 +1,6 @@
+/* Load Schibsted Grotesk font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
