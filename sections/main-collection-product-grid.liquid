@@ -95,6 +95,25 @@
       </facet-filters-form>
     {%- endif -%}
 
+    <!-- Start - list of collections products -->
+
+
+    <ul class="collections-menu-list">
+        <li{% if request.path == routes.all_products_collection_url %} class="collections-menu-list-active"{% endif %}>
+          <a class="button" href="{{ routes.all_products_collection_url }}">{{ 'collections.all_collections_label' | t }}</a>
+        </li>
+        {%- for collection in collections -%}
+          {%  if collection.all_products_count >= 0 %}
+            <li{% if request.path == collection.url %} class="collections-menu-list-active"{% endif %}>
+              <a class="button" href="{{ collection.url }}">{{ collection.title }} </a>
+            </li>
+          {% endif %}
+        {%- endfor -%}
+    </ul>
+
+      <!-- End - list of collections products -->
+    
+
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
@@ -171,7 +190,8 @@
                     show_rating: section.settings.show_rating,
                     lazy_load: lazy_load,
                     quick_add: section.settings.quick_add,
-                    section_id: section.id
+                    section_id: section.id,                    
+                    show_first_collection: true
                   %}
                 </li>
               {%- endfor -%}

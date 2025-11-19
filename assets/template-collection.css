@@ -97,3 +97,36 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+
+.collections-menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0rem auto 8rem;
+}
+
+.collections-menu-list a {
+  padding: 2rem;
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+
+.collections-menu-list :not(.collections-menu-list-active) a {
+  --color-button: 228, 223, 209;
+  --alpha-button-background: 1;
+  --color-shadow: 0, 0, 0;
+  background-color: transparent;
+}
+
+.collections-menu-list .collections-menu-list-active a {
+ --color-button: 228, 223, 209;
+  --alpha-button-background: 1;
+}

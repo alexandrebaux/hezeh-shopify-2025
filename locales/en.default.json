@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "All Collections"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Enter store using password:",

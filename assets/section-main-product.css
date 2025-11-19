@@ -183,6 +183,8 @@
 
 .product-form__submit {
   margin-bottom: 1rem;
+
+  --color-button: 228, 223, 209;
 }
 
 .product-form__submit[aria-disabled='true'] + .shopify-payment-button .shopify-payment-button__button[disabled],
