@@ -290,20 +290,16 @@ h5,
 }
 
 h1,
-.h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
-}
-
-@media only screen and (min-width: 750px) {
-  h1,
-  .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
-  }
-}
-
+.h1,
 h2,
 .h2 {
   font-size: clamp(32px, 3vw,42px);
+}
+
+h2.pretitle,
+.h2.pretitle  {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-size: 12px;
 }
 
 
