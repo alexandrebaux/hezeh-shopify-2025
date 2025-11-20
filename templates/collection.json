@@ -12,10 +12,10 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
+        "custom_title": "Boutique",
         "show_collection_description": false,
         "show_collection_image": false,
-        "color_scheme": "scheme-1",
-        "custom_title": "Boutique"
+        "color_scheme": "scheme-1"
       }
     },
     "product-grid": {
@@ -30,11 +30,14 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_first_collection": false,
+        "show_collections_links": true,
+        "show_empty_collections": true,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
         "columns_mobile": "2",
-        "padding_top": 36,
+        "padding_top": 20,
         "padding_bottom": 60
       }
     }
