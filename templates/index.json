@@ -92,7 +92,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 16,
-        "padding_bottom": 16
+        "padding_bottom": 72
       }
     },
     "rich_text_AkP6dw": {
@@ -108,21 +108,33 @@
         "heading_J9TCEJ": {
           "type": "heading",
           "settings": {
-            "heading": "H.02-2 - Édition d’été",
+            "heading": "Workwear",
             "heading_size": "h2"
           }
         },
         "text_NH4JtL": {
           "type": "text",
           "settings": {
-            "text": "<h5>Une capsule estivale et minérale. Inspirée d’éléments naturels et teinte à la main avec des végétaux, cette capsule est totalement exclusive. Conçues en collaboration avec l’artiste plasticienne Catherine Cappeau, les pièces mettent en lumière les nuances du grès et des coupes épurées, pensées pour révéler la beauté brute des matières et le temps long du geste artisanal.</h5>"
+            "text": "<p>Déclinaison de la collection Workwear, cette capsule a été réalisée en collaboration avec l’artiste plasticienne Catherine Cappeau. Les pièces de la collection initiale sont revisitées dans des matières plus estivales, et teintées à la main avec des pigments naturels pour faire écho à la beauté brute des matières minérales — le grès, le sable, le calcaire.</p>"
+          }
+        },
+        "button_JEFYn6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Découvrir la collection H.02-2",
+            "button_link": "shopify://collections/h-02-edition-d-ete",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "heading_7pnXcG",
         "heading_J9TCEJ",
-        "text_NH4JtL"
+        "text_NH4JtL",
+        "button_JEFYn6"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -130,8 +142,8 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "image_grid_E9DxB6": {
