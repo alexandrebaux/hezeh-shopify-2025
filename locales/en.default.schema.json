@@ -425,6 +425,12 @@
         },
         "options__5": {
           "label": "Pretitle"
+        },
+        "options__6": {
+          "label": "Left"
+        },
+        "options__7": {
+          "label": "Right"
         }
       },
       "image_shape": {

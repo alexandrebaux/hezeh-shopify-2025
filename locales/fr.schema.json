@@ -401,10 +401,19 @@
         },
         "options__3": {
           "label": "Grand"
-        },
+        },        
         "options__4": {
-          "label": "Très grand"
-        }
+          "label": "Trés grand"
+        },
+        "options__5": {
+          "label": "Prétitre"
+        },
+        "options__6": {
+          "label": "Gauche"
+        },
+        "options__7": {
+          "label": "Droite"
+        }       
       },
       "image_shape": {
         "options__1": {
@@ -3255,14 +3264,7 @@
           },
           "options__3": {
             "label": "Grand"
-          },
-          "options__4": {
-            "label": "Trés grand"
-          },
-          "options__5": {
-            "label": "Prétitre"
-          },
-          
+          },          
           "label": "Taille du titre"
         },
         "text_style": {

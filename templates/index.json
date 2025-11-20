@@ -105,11 +105,25 @@
             "heading_size": "pretitle"
           }
         },
+        "heading_retxPQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "H.02-2",
+            "heading_size": "flleft"
+          }
+        },
         "heading_J9TCEJ": {
           "type": "heading",
           "settings": {
             "heading": "Workwear",
             "heading_size": "h2"
+          }
+        },
+        "heading_G3ix8G": {
+          "type": "heading",
+          "settings": {
+            "heading": "2025",
+            "heading_size": "flright"
           }
         },
         "text_NH4JtL": {
@@ -132,7 +146,9 @@
       },
       "block_order": [
         "heading_7pnXcG",
+        "heading_retxPQ",
         "heading_J9TCEJ",
+        "heading_G3ix8G",
         "text_NH4JtL",
         "button_JEFYn6"
       ],
