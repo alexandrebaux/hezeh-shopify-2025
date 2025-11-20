@@ -2749,6 +2749,10 @@ details[open] > .header__submenu {
   color: rgba(var(--color-foreground), 1);
 }
 
+.header__menu-item.link {
+ font-size: 14px;
+}
+
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
 }
@@ -2759,6 +2763,7 @@ details[open] > .header__submenu {
 
 .header__menu-item:hover span {
   text-decoration: underline;
+  text-decoration-color: #A19C8C;
   text-underline-offset: 0.3rem;
 }
 
@@ -2779,6 +2784,7 @@ details[open] > .header__menu-item .icon-caret {
   color: rgb(var(--color-foreground));
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+  text-decoration-color: #A19C8C;
 }
 
 .header__menu-item:hover .header__active-menu-item {
