@@ -98,6 +98,13 @@
     "rich_text_AkP6dw": {
       "type": "rich-text",
       "blocks": {
+        "heading_7pnXcG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Collection",
+            "heading_size": "pretitle"
+          }
+        },
         "heading_J9TCEJ": {
           "type": "heading",
           "settings": {
@@ -113,6 +120,7 @@
         }
       },
       "block_order": [
+        "heading_7pnXcG",
         "heading_J9TCEJ",
         "text_NH4JtL"
       ],
