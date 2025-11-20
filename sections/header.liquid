@@ -170,25 +170,18 @@
         <h1 class="header__heading">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- if settings.logo != blank -%}
+            
               <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
-                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo motion-reduce',
-                  widths: widths,
-                  height: logo_height,
-                  width: settings.logo_width,
-                  alt: logo_alt,
-                  sizes: sizes,
-                  preload: true
-                }}
+
+                <svg style="width:{{settings.logo_width}}; height: auto;" width="1439" height="264" viewBox="0 0 1439 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M158.192 108.58H46.167V0.0759277H0V263.263H46.167V154.755H158.192V263.263H204.363V0.0759277H158.192V108.58Z" fill="#233740"/>
+                  <path d="M1391.86 0.0799561V108.584H1279.84V0.0799561H1233.66V263.267H1279.84V154.759H1391.86V263.267H1438.03V0.0799561H1391.86Z" fill="#233740"/>
+                  <path d="M301.439 263.26H505.806V217.089H347.61V154.752H505.806V108.577H347.61V46.2479H505.806V0.072998H301.439V263.26Z" fill="#233740"/>
+                  <path d="M932.228 263.26H1136.59V217.089H978.399V154.752H1136.59V108.577H978.399V46.2479H1136.59V0.072998H932.228V263.26Z" fill="#233740"/>
+                  <path d="M829.878 0H602.886V45.4919H780.774C774.044 59.2289 764.04 71.125 751.507 80.213L709.815 110.542V110.408L658.503 147.617C623.678 172.863 602.886 213.942 602.886 257.5V262.963H835.149V217.475H656.128C662.624 204.238 672.161 192.717 684.074 183.779L684.065 183.971L778.357 115.425C813.919 89.6459 835.149 48.571 835.149 5.54199V0.0789795H829.836L829.878 0Z" fill="#233740"/>
+                </svg>
+
               </div>
-            {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
-            {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
         </h1>
