@@ -74,16 +74,6 @@ product-info .price .price-item {
   font-size: 12px;
 }
 
-product-info .product-form__buttons button {
-
-  font-family: 'schibsted grotesk', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 120%;
-  height: 5.5rem;
-
-}
-
 product-info .product-form__quantity {
  margin-top: 0;
 }
