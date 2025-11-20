@@ -1782,6 +1782,12 @@
     "main-collection-product-grid": {
       "name": "Product grid",
       "settings": {
+        "show_collections_links": {
+          "label": "Show collections links"
+        },
+        "show_empty_collections": {
+          "label": "Show empty collections"
+        },
         "products_per_page": {
           "label": "Products per page"
         },

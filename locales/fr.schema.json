@@ -1466,6 +1466,12 @@
     "main-collection-product-grid": {
       "name": "Grille de produit",
       "settings": {
+        "show_collections_links": {
+          "label": "Afficher les liens des collections"
+        },
+        "show_empty_collections": {
+          "label": "Afficher les collections vides"
+        },
         "products_per_page": {
           "label": "Produits par page"
         },

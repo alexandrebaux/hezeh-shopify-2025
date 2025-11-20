@@ -106,7 +106,9 @@
           <option value="{{ routes.all_products_collection_url }}"{% if request.path == routes.all_products_collection_url %} selected{% endif %}>{{ 'collections.all_collections_label' | t }}</option>
           {%- for collection in collections -%}
             {% if collection.all_products_count >= 0 %}
-              <option value="{{ collection.url }}"{% if request.path == collection.url %} selected{% endif %}>{{ collection.title }}</option>
+                {% if section.settings.show_empty_collections or collection.all_products_count > 0 %}
+                  <option value="{{ collection.url }}"{% if request.path == collection.url %} selected{% endif %}>{{ collection.title }}</option>
+                {% endif %}
             {% endif %}
           {%- endfor -%}
         </select>
@@ -120,11 +122,11 @@
             <a class="button" href="{{ routes.all_products_collection_url }}">{{ 'collections.all_collections_label' | t }}</a>
           </li>
           {%- for collection in collections -%}
-            {%  if collection.all_products_count >= 0 %}
+                {% if section.settings.show_empty_collections or collection.all_products_count > 0 %}
               <li{% if request.path == collection.url %} class="collections-menu-list-active"{% endif %}>
                 <a class="button" href="{{ collection.url }}">{{ collection.title }} </a>
               </li>
-            {% endif %}
+                {% endif %}
           {%- endfor -%}
       </ul>
 
@@ -362,7 +364,57 @@
         }
       ]
     },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid.settings.header__1.content",
+    },
     
+    {
+      "type": "checkbox",
+      "id": "show_collections_links",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.show_collections_links.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_empty_collections",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.show_empty_collections.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_filtering",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_filtering.label",
+      "info": "t:sections.main-collection-product-grid.settings.enable_filtering.info"
+    },
+    {
+      "type": "select",
+      "id": "filter_type",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "t:sections.main-collection-product-grid.settings.filter_type.options__1.label"
+        },
+        {
+          "value": "vertical",
+          "label": "t:sections.main-collection-product-grid.settings.filter_type.options__2.label"
+        },
+        {
+          "value": "drawer",
+          "label": "t:sections.main-collection-product-grid.settings.filter_type.options__3.label"
+        }
+      ],
+      "default": "horizontal",
+      "label": "t:sections.main-collection-product-grid.settings.filter_type.label",
+      "info": "t:sections.main-collection-product-grid.settings.filter_type.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sorting",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+    },
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header_mobile.content"
