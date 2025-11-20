@@ -98,6 +98,10 @@
   margin-top: 1rem;
 }
 
+.collection__view-all .button {
+  --color-button: 228, 223, 209;
+  background-color: transparent;
+}
 
 .collections-menu-list {
   max-width: 100%;
