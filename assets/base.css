@@ -1,5 +1,7 @@
 /* Load Schibsted Grotesk font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&display=swap');
+
 
 :root {
   --alpha-button-background: 1;
@@ -1550,9 +1552,8 @@ details[open] > .share-button__fallback {
   appearance: none;
   background-color: rgb(var(--color-background));
   color: rgb(var(--color-foreground));
-  font-family: var(--font-body-family);
-  font-style: var(--font-body-style);
-  font-weight: var(--font-body-weight);
+  font-family: 'schibsted grotesk', sans-serif;
+  font-weight: 500;
   font-size: 1.6rem;
   width: 100%;
   box-sizing: border-box;
@@ -1603,9 +1604,8 @@ details[open] > .share-button__fallback {
 }
 
 .select__select {
-  font-family: var(--font-body-family);
-  font-style: var(--font-body-style);
-  font-weight: var(--font-body-weight);
+  font-family: 'schibsted grotesk', sans-serif;
+  font-weight: 500;
   font-size: 1.2rem;
   color: rgba(var(--color-foreground), 1);
 }

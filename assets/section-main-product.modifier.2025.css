@@ -84,15 +84,6 @@ product-info .product-form__buttons button {
 
 }
 
-product-info .product-form__buttons button {
-  display: inline-flex;
-  width: auto;
-  border-radius: 90px;
-  border-width: 1px;
-  gap: 10px;
-  opacity: 1;
-}
-
 product-info .product-form__quantity {
  margin-top: 0;
 }
@@ -112,8 +103,13 @@ product-info .share-button__button {
   padding: 1rem;
   min-height: initial
 }
-
+product-info .product-form__buttons button,
+product-info .select,
+product-info .product-form__input.product-form__input--dropdown {
+  display: inline-flex;
+  width: auto;
+}
 product-info .select__select {
-  top:1px;
   font-size: 14px;
+  padding-right: 4rem;
 }
