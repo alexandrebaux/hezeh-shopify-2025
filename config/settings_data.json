@@ -148,8 +148,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/icone-c3_4x_9acccb75-e2db-450f-b46d-73340eab476d.png",
-              "image_width": 155,
-              "alignment": "center"
+              "image_width": 155
             }
           },
           "link_list_txkxet": {
