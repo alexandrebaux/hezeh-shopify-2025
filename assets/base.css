@@ -397,9 +397,8 @@ blockquote {
 .field__input,
 .form__label,
 .select__select {
-  font-size: 1.3rem;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
-  letter-spacing: 0.04rem;
+  font-family: 'schibsted grotesk', sans-serif;
+  font-weight: 500;
 }
 
 .color-foreground {

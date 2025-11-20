@@ -74,7 +74,6 @@ product-info .price .price-item {
   font-size: 12px;
 }
 
-product-info .select__select,
 product-info .product-form__buttons button {
 
   font-family: 'schibsted grotesk', sans-serif;
@@ -112,4 +111,9 @@ product-info .share-button__button {
   margin-top: -1rem;
   padding: 1rem;
   min-height: initial
+}
+
+product-info .select__select {
+  top:1px;
+  font-size: 14px;
 }

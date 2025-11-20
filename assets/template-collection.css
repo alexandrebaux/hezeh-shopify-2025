@@ -133,3 +133,30 @@
  --color-button: 228, 223, 209;
   --alpha-button-background: 1;
 }
+
+/* Mobile collections menu select styles */
+.collections-menu-list-mobile {
+  display: none;
+  width: auto;
+  padding: 1rem 1rem 5rem;
+  text-align: center;
+  --color-background: 228, 223, 209;  
+}
+.collections-menu-list-mobile .select {
+  display: inline-flex;
+  width: auto;
+}
+.collections-menu-list-mobile .select__select {
+  font-size: 16px;
+  padding-right: 4rem;
+  padding-top:4px;
+}
+
+@media screen and (max-width: 749px) {
+  .collections-menu-list-mobile {
+    display: block;
+  }
+  .collections-menu-list {
+    display: none;
+  }
+}
