@@ -1466,6 +1466,9 @@
     "main-collection-product-grid": {
       "name": "Grille de produit",
       "settings": {
+        "show_first_collection": {
+          "label": "Afficher la collection"
+        },
         "show_collections_links": {
           "label": "Afficher les liens des collections"
         },

@@ -1785,6 +1785,9 @@
     "main-collection-product-grid": {
       "name": "Product grid",
       "settings": {
+        "show_first_collection": {
+          "label": "Show collection"
+        },
         "show_collections_links": {
           "label": "Show collections links"
         },

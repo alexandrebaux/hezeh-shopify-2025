@@ -1212,6 +1212,7 @@ button.shopify-payment-button__button--unbranded {
 
   letter-spacing: 0;
   line-height: 1;
+  padding: 2rem;
 }
 
 .button:before,

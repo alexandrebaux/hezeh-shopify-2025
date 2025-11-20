@@ -112,10 +112,11 @@
   justify-content: center;
   gap: 1rem;
   margin: 0rem auto 8rem;
-  padding: 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .collections-menu-list a {
+  /*
   padding: 2rem;
   font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 500;
@@ -123,6 +124,7 @@
   line-height: 120%;
   letter-spacing: 0%;
   text-align: center;
+  */
 }
 
 

@@ -210,7 +210,7 @@
                     lazy_load: lazy_load,
                     quick_add: section.settings.quick_add,
                     section_id: section.id,                    
-                    show_first_collection: true,
+                    show_first_collection: section.settings.show_first_collection,
                   %}
                 </li>
               {%- endfor -%}
@@ -363,6 +363,12 @@
           "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_first_collection",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_first_collection.label"
     },
     {
       "type": "header",
