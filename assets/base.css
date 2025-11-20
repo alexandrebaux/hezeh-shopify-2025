@@ -3269,7 +3269,7 @@ details-disclosure > details {
       opacity: 0.01;
     }
     to {
-      transform: translateY(0);
+      transform: translateY(var(--slide-in-final-transform, 0));
       opacity: 1;
     }
   }

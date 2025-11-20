@@ -5,9 +5,44 @@
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
-  width: 835px;
+}
+
+.rich-text__wrapper .rich-text__blocks {
+  width: 730px;
   max-width: 100%;
 }
+
+.rich-text__wrapper .flleft,
+.rich-text__wrapper .flright {
+  font-size: clamp(20px, 2vw, 28px);
+}
+
+@media screen and (max-width: 899px) {
+  .rich-text__wrapper .h2 + .flright {
+    margin-top: -0.5rem;
+  }
+  .rich-text__wrapper .flleft + .h2 {
+    margin-top: -0.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .rich-text__wrapper .flleft,
+  .rich-text__wrapper .flright {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    --slide-in-final-transform: -50%;
+  }
+
+  .rich-text__wrapper .flleft {
+    left: 2rem;
+  }
+  .rich-text__wrapper .flright {
+    right: 2rem;
+  }
+}
+
 
 .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
   margin: auto;
