@@ -10,7 +10,7 @@
 {
   "current": {
     "logo": "shopify://shop_images/signature-c3_4x_copy.png",
-    "logo_width": 140,
+    "logo_width": 175,
     "favicon": "shopify://shop_images/icone-c3_4x_9acccb75-e2db-450f-b46d-73340eab476d.png",
     "type_header_font": "newsreader_n3",
     "heading_scale": 120,
@@ -262,7 +262,7 @@
   },
   "presets": {
     "Default": {
-      "logo_width": 120,
+      "logo_width": 175,
       "color_schemes": {
         "scheme-1": {
           "settings": {
