@@ -1,0 +1,52 @@
+{% schema %}
+{
+  "name": "Grid V2",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "Grid V2",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="grid-v2-section">
+  <div class="grid-v2">
+    {% for block in section.blocks %}
+      <div class="grid-v2__item">
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 800, height: 600 }}" alt="Grid image" width="800" height="600" />
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.grid-v2__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
