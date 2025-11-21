@@ -191,7 +191,7 @@
             "image": "shopify://shop_images/1_e84a23b8-38e0-413b-8a37-9f8120da6a15.png",
             "position": "left",
             "width": "334",
-            "offset_x": 30,
+            "offset_x": 70,
             "offset_y": -170
           }
         },
@@ -204,35 +204,13 @@
             "offset_x": 0,
             "offset_y": -200
           }
-        },
-        "image_C69MKD": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_b42a737f-5715-4dcd-a343-6704eb4b1c92.png",
-            "position": "center",
-            "width": "869",
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
-        "image_zWHP8G": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_88705966-82bb-44da-bb5e-fb9771c00ec6.png",
-            "position": "right",
-            "width": "421",
-            "offset_x": 0,
-            "offset_y": 0
-          }
         }
       },
       "block_order": [
         "image_Brnrkd",
         "image_LHPXPm",
         "image_WnAAda",
-        "image_xKaxjt",
-        "image_C69MKD",
-        "image_zWHP8G"
+        "image_xKaxjt"
       ],
       "name": "Grid V2",
       "settings": {
