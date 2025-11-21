@@ -72,9 +72,9 @@
 <div class="grid-v2-section">
   <div class="grid-v2">
     {% for block in section.blocks %}
-      <div class="grid-v2__item position-{{ block.settings.position }}">
+        <div class="grid-v2__item position-{{ block.settings.position }}" >
         {% if block.settings.image %}
-          <img src="{{ block.settings.image | image_url: width: 800, height: 600 }}" alt="Grid image" width="800" height="600" style="width:{{ block.settings.width }}px;" />
+          <img {{ block.shopify_attributes }} src="{{ block.settings.image | image_url: width: 800, height: 600 }}" alt="Grid image" width="800" height="600" style="width:{{ block.settings.width }}px;" />
         {% endif %}
       </div>
     {% endfor %}
