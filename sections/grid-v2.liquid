@@ -4,58 +4,85 @@
   "tag": "section",
   
     "settings": [
-      {
-        "type": "range",
-        "id": "margin_top",
-        "label": "Margin Top (px)",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "margin_bottom",
-        "label": "Margin Bottom (px)",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "default": 0
-      }
+          {
+            "type": "range",
+            "id": "margin_top",
+            "label": "Margin Top (px)",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "margin_bottom",
+            "label": "Margin Bottom (px)",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "grid_padding",
+            "label": "Grid Padding (%)",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 15
+          }
     ],
   "blocks": [
     {
       "type": "image",
       "name": "Image Block",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "select",
-          "id": "position",
-          "label": "Position de l'image",
-          "options": [
-            { "value": "left", "label": "Gauche" },
-            { "value": "center", "label": "Centre" },
-            { "value": "right", "label": "Droite" }
-          ],
-          "default": "center"
-        },
-        {
-          "type": "select",
-          "id": "width",
-          "label": "Taille de l'image (px)",
-          "options": [
-            { "value": "565", "label": "565px" },
-            { "value": "421", "label": "421px" },
-            { "value": "869", "label": "869px" },
-            { "value": "334", "label": "334px" }
-          ],
-          "default": "565"
-        }
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "select",
+            "id": "position",
+            "label": "Position de l'image",
+            "options": [
+              { "value": "left", "label": "Gauche" },
+              { "value": "center", "label": "Centre" },
+              { "value": "right", "label": "Droite" }
+            ],
+            "default": "center"
+          },
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Taille de l'image (px)",
+            "options": [
+              { "value": "565", "label": "565px" },
+              { "value": "421", "label": "421px" },
+              { "value": "869", "label": "869px" },
+              { "value": "334", "label": "334px" }
+            ],
+            "default": "565"
+          },
+          {
+            "type": "range",
+            "id": "offset_x",
+            "label": "Image X Offset (px)",
+            "min": -100,
+            "max": 100,
+            "step": 2,
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "offset_y",
+            "label": "Image Y Offset (px)",
+            "min": -100,
+            "max": 100,
+            "step": 2,
+            "default": 0
+          }
       ]
     }
   ],
@@ -70,45 +97,45 @@
 {% endschema %}
 
 <div class="grid-v2-section">
-  <div class="grid-v2">
+  <div class="grid-v2" style="--grid-padding: {{ section.settings.grid_padding | default: 15 }}%;">
     {% for block in section.blocks %}
-        <div class="grid-v2__item position-{{ block.settings.position }}" >
+      <div class="grid-v2__item position-{{ block.settings.position }}" style="--img-offset-x: {{ block.settings.offset_x | default: 0 }}px; --img-offset-y: {{ block.settings.offset_y | default: 0 }}px; --img-width: {{ block.settings.width }}px;">
         {% if block.settings.image %}
-          <img {{ block.shopify_attributes }} src="{{ block.settings.image | image_url: width: 800, height: 600 }}" alt="Grid image" width="800" height="600" style="width:{{ block.settings.width }}px;" />
+          <img {{ block.shopify_attributes }} src="{{ block.settings.image | image_url: width: 800, height: 600 }}" alt="Grid image" width="800" height="600" />
         {% endif %}
       </div>
     {% endfor %}
-  </div>
 </div>
 
 <style>
-
 .grid-v2-section {
   margin-top: {{ section.settings.margin_top | default: 0 }}px;
   margin-bottom: {{ section.settings.margin_bottom | default: 0 }}px;
 }
 
-.grid-v2 {
-
+@media (min-width: 1024px) {
+  .grid-v2 {
+    padding-left: var(--grid-padding, 15%);
+    padding-right: var(--grid-padding, 15%);
+  }
+  .grid-v2__item img {
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+    width: var(--img-width, 565px);
+    margin-left: var(--img-offset-x, 0px);
+    margin-top: var(--img-offset-y, 0px);
+  }
+  .position-left img {
+    margin-right: auto;
+  }
+  .position-center img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .position-right img {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
-
-.grid-v2__item img {
-  height: auto;
-  display: block;
-}
-
-.position-left img {
-  margin-left: 0;
-  margin-right: auto;
-}
-.position-center img {
-  margin-left: auto;
-  margin-right: auto;
-}
-.position-right img {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-
 </style>
