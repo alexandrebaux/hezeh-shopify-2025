@@ -170,7 +170,9 @@
           "settings": {
             "image": "shopify://shop_images/1_e84a23b8-38e0-413b-8a37-9f8120da6a15.png",
             "position": "left",
-            "width": "565"
+            "width": "565",
+            "offset_x": 0,
+            "offset_y": 0
           }
         },
         "image_LHPXPm": {
@@ -178,15 +180,9 @@
           "settings": {
             "image": "shopify://shop_images/3_b42a737f-5715-4dcd-a343-6704eb4b1c92.png",
             "position": "right",
-            "width": "421"
-          }
-        },
-        "image_xKaxjt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_88705966-82bb-44da-bb5e-fb9771c00ec6.png",
-            "position": "center",
-            "width": "869"
+            "width": "421",
+            "offset_x": -20,
+            "offset_y": -220
           }
         },
         "image_WnAAda": {
@@ -194,7 +190,19 @@
           "settings": {
             "image": "shopify://shop_images/1_e84a23b8-38e0-413b-8a37-9f8120da6a15.png",
             "position": "left",
-            "width": "421"
+            "width": "334",
+            "offset_x": 30,
+            "offset_y": -170
+          }
+        },
+        "image_xKaxjt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_88705966-82bb-44da-bb5e-fb9771c00ec6.png",
+            "position": "center",
+            "width": "869",
+            "offset_x": 0,
+            "offset_y": -200
           }
         },
         "image_C69MKD": {
@@ -202,7 +210,9 @@
           "settings": {
             "image": "shopify://shop_images/3_b42a737f-5715-4dcd-a343-6704eb4b1c92.png",
             "position": "center",
-            "width": "869"
+            "width": "869",
+            "offset_x": 0,
+            "offset_y": 0
           }
         },
         "image_zWHP8G": {
@@ -210,22 +220,25 @@
           "settings": {
             "image": "shopify://shop_images/2_88705966-82bb-44da-bb5e-fb9771c00ec6.png",
             "position": "right",
-            "width": "421"
+            "width": "421",
+            "offset_x": 0,
+            "offset_y": 0
           }
         }
       },
       "block_order": [
         "image_Brnrkd",
         "image_LHPXPm",
-        "image_xKaxjt",
         "image_WnAAda",
+        "image_xKaxjt",
         "image_C69MKD",
         "image_zWHP8G"
       ],
       "name": "Grid V2",
       "settings": {
         "margin_top": 0,
-        "margin_bottom": 0
+        "margin_bottom": 0,
+        "grid_max_width": 1200
       }
     },
     "image_grid_E9DxB6": {
