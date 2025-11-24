@@ -3079,6 +3079,9 @@
             "image": {
               "label": "Image"
             },
+            "image_limit_height": {
+              "label": "Limit image height"
+            },
             "heading": {
               "label": "Heading"
             },

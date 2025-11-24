@@ -2834,6 +2834,9 @@
             "image": {
               "label": "Image"
             },
+            "image_limit_height": {
+              "label": "Limiter la hauteur de l'image"
+            },
             "heading": {
               "label": "En-tête"
             },
