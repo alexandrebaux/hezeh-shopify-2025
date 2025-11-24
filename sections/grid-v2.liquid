@@ -99,7 +99,7 @@
 <div class="grid-v2-section">
   <div class="grid-v2" style="--grid-max-width: {{ section.settings.grid_max_width | default: 1200 }}px;">
     {% for block in section.blocks %}
-      <div  class="grid-v2__item position-{{ block.settings.position }}" style="--img-offset-x: {{ block.settings.offset_x | default: 0 }}px; --img-offset-y: {{ block.settings.offset_y | default: 0 }}px; --img-width: {{ block.settings.width }}px;">
+      <div  class="grid-v2__item position-{{ block.settings.position }}" style="--img-offset-x: {{ block.settings.offset_x | default: 0 }}; --img-offset-y: {{ block.settings.offset_y | default: 0 }}; --img-width: {{ block.settings.width }};">
         {% if block.settings.image %}
             <div class="parallax-item">
                 <img {{ block.shopify_attributes }} src="{{ block.settings.image | image_url: width: 800, height: 600 }}" alt="Grid image" width="800" height="600" />
@@ -114,8 +114,24 @@
   margin-top: {{ section.settings.margin_top | default: 0 }}px;
   margin-bottom: {{ section.settings.margin_bottom | default: 0 }}px;
 }
+.grid-v2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 1023px) {
+  .grid-v2__item img {
+    width: calc( (var(--img-width, 565) / 869) * 100%);
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
 
 @media (min-width: 1024px) {
+
   .grid-v2 {
     max-width: var(--grid-max-width, 1200px);
     padding-left: 20px;
@@ -123,14 +139,15 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .grid-v2__item img {
     position: relative;
     height: auto;
     display: block;
     margin-bottom: 50px;
-    width: var(--img-width, 565px);
-    left: var(--img-offset-x, 0px);
-    margin-top: var(--img-offset-y, 0px);
+    width: calc(var(--img-width, 565) * 1px);
+    left: calc(var(--img-offset-x, 0) * 1px);
+    margin-top: calc(var(--img-offset-y, 0) * 1px);
   }
   .position-left img {
     margin-right: auto;
@@ -154,7 +171,7 @@
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: item,
-              start: 'top 80%',
+              start: 'top 100%',
               end: 'bottom 20%',
               scrub: true,
             }
