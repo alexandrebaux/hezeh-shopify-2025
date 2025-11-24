@@ -186,15 +186,26 @@
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: item,
-              start: 'top 100%',
+              start: 'top 80%',
               end: 'bottom 20%',
               scrub: true,
             }
           });
-          tl.fromTo(item,
-            { y: 60, opacity: 0.7, scale: 0.95 },
-            { y: 0, opacity: 1, scale: 1, duration: 1, ease: 'power2.out' }
+
+          tl.fromTo(
+            item,
+            { y: 60, scale: 0.95 },
+            { y: 0, scale: 1, duration: 1, ease: 'power2.out' },
+            0
           );
+
+          tl.fromTo(
+            item,
+            { opacity: 0.7 },
+            { opacity: 1,  duration: 0.5, ease: 'power2.out' },
+            0
+          );
+
         });
       } else {
         console.warn('GSAP or ScrollTrigger not loaded');
