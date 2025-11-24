@@ -16,6 +16,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/HERO.png",
+            "image_limit_height": true,
+            "target_point_x": 50,
+            "target_point_y": 50,
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
