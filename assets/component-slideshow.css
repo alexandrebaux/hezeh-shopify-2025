@@ -19,6 +19,17 @@ slideshow-component .slideshow.banner {
   visibility: visible;
 }
 
+.image-limit-height,
+.image-limit-height * {
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+.image-limit-height img {
+  object-fit: cover;
+  object-position: var(--target-point-x, 50%) var(--target-point-y, 50%);
+}
+
 @media screen and (max-width: 749px) {
   .slideshow--placeholder.banner--mobile-bottom.banner--adapt_image .slideshow__media,
   .slideshow--placeholder.banner--adapt_image:not(.banner--mobile-bottom) {
