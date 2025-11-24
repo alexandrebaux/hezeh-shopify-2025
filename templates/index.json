@@ -29,23 +29,23 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
-        },
+        }
       },
       "block_order": [
         "slide-0"
       ],
       "settings": {
         "layout": "full_bleed",
+        "image_limit_height": true,
+        "target_point_x": 50,
+        "target_point_y": 1,
         "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 3,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand.",
-        "image_limit_height": true, 
-        "target_point_x": 50,
-        "target_point_y": 1,
+        "accessibility_info": "Slideshow about our brand."
       }
     },
     "rich_text_EWArWg": {
@@ -171,7 +171,8 @@
         "image_Brnrkd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_e84a23b8-38e0-413b-8a37-9f8120da6a15.png",
+            "image": "shopify://shop_images/9_1784aad7-f09b-4ee0-bd4c-095d8b4139c1.png",
+            "image_ratio": "square",
             "position": "left",
             "width": "565",
             "offset_x": 0,
@@ -181,38 +182,29 @@
         "image_LHPXPm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_b42a737f-5715-4dcd-a343-6704eb4b1c92.png",
+            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
+            "image_ratio": "square",
             "position": "right",
             "width": "421",
             "offset_x": -20,
             "offset_y": -220
           }
         },
-        "image_WnAAda": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_e84a23b8-38e0-413b-8a37-9f8120da6a15.png",
-            "position": "left",
-            "width": "334",
-            "offset_x": 70,
-            "offset_y": -170
-          }
-        },
         "image_xKaxjt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_88705966-82bb-44da-bb5e-fb9771c00ec6.png",
+            "image": "shopify://shop_images/1_e3211bad-4b51-4729-a4f2-f17d2f8bb5a8.png",
+            "image_ratio": "square",
             "position": "center",
             "width": "869",
             "offset_x": 0,
-            "offset_y": -200
+            "offset_y": 0
           }
         }
       },
       "block_order": [
         "image_Brnrkd",
         "image_LHPXPm",
-        "image_WnAAda",
         "image_xKaxjt"
       ],
       "name": "Grid V2",

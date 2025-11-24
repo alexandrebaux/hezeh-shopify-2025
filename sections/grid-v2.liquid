@@ -3,7 +3,7 @@
   "name": "Grid V2",
   "tag": "section",
   
-    "settings": [
+  "settings": [
           {
             "type": "range",
             "id": "margin_top",
@@ -41,6 +41,15 @@
             "type": "image_picker",
             "id": "image",
             "label": "Image"
+          },
+          {
+            "type": "select",
+            "id": "image_ratio",
+            "label": "Image Ratio",
+            "options": [
+              { "value": "default", "label": "Par défaut" },
+              { "value": "square", "label": "Carré" }
+            ],
           },
           {
             "type": "select",
@@ -99,10 +108,10 @@
 <div class="grid-v2-section">
   <div class="grid-v2" style="--grid-max-width: {{ section.settings.grid_max_width | default: 1200 }}px;">
     {% for block in section.blocks %}
-      <div  class="grid-v2__item position-{{ block.settings.position }}" style="--img-offset-x: {{ block.settings.offset_x | default: 0 }}; --img-offset-y: {{ block.settings.offset_y | default: 0 }}; --img-width: {{ block.settings.width }};">
+      <div  class="grid-v2__item position-{{ block.settings.position }} ratio-{{ block.settings.image_ratio }}" style="--img-offset-x: {{ block.settings.offset_x | default: 0 }}; --img-offset-y: {{ block.settings.offset_y | default: 0 }}; --img-width: {{ block.settings.width }};">
         {% if block.settings.image %}
             <div class="parallax-item">
-                <img {{ block.shopify_attributes }} src="{{ block.settings.image | image_url: width: 800, height: 600 }}" alt="Grid image" width="800" height="600" />
+                <img {{ block.shopify_attributes }} src="{{ block.settings.image | image_url: width: 800, height: 600 }}" alt="Grid image" />
             </div>
         {% endif %}
       </div>
@@ -117,6 +126,12 @@
 .grid-v2 {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.grid-v2 .ratio-square img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width: 1023px) {
