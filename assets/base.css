@@ -88,6 +88,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
 }
 
+/* Add top padding to content when there's no slideshow in the first section */
+body:not(:has(section:first-child slideshow-component)) .content-for-layout {
+  padding-top: var(--header-height);
+}
+
 .page-width.drawer-menu {
   max-width: 100%;
 }
