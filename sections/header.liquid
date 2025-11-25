@@ -91,15 +91,28 @@
   }
 
   .section-header {
-    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 750px) {}
     .section-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+      transition: background-color 0.5s ease-in-out 1s, transform 0.5s ease-in-out;
       margin-bottom: {{ section.settings.margin_bottom }}px;
     }
-  }
+
+    .section-header.scrolled-past-header {
+      background-color: #fdfbf5; 
+    }
+
+    .section-header.shopify-section-header-hidden {
+      transform: translateY(-100%);
+    }
+
+  
 
   @media screen and (min-width: 990px) {
     .header {
@@ -173,7 +186,7 @@
             
               <div class="header__heading-logo-wrapper">
 
-                <svg style="width:{{settings.logo_width}}; height: auto;" width="1439" height="264" viewBox="0 0 1439 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style="height: auto;" width="1439" height="264" viewBox="0 0 1439 264" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M158.192 108.58H46.167V0.0759277H0V263.263H46.167V154.755H158.192V263.263H204.363V0.0759277H158.192V108.58Z" fill="currentColor"/>
                   <path d="M1391.86 0.0799561V108.584H1279.84V0.0799561H1233.66V263.267H1279.84V154.759H1391.86V263.267H1438.03V0.0799561H1391.86Z" fill="currentColor"/>
                   <path d="M301.439 263.26H505.806V217.089H347.61V154.752H505.806V108.577H347.61V46.2479H505.806V0.072998H301.439V263.26Z" fill="currentColor"/>
