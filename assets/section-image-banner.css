@@ -219,6 +219,7 @@
 }
 
 @media screen and (max-width: 749px) {
+  
   .banner--mobile-bottom .banner__media,
   .banner--stacked:not(.banner--mobile-bottom) .banner__media {
     position: relative;
@@ -330,6 +331,8 @@
 @media screen and (max-width: 749px) {
   .banner--mobile-bottom:not(.banner--stacked) .banner__content {
     order: 2;
+    position: absolute;
+    bottom: 0;
   }
 
   .banner:not(.banner--mobile-bottom) .field__input,
@@ -359,7 +362,7 @@
   }
 
   .banner--desktop-transparent .banner__box {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
     background: transparent;
     max-width: 89rem;
     border: none;

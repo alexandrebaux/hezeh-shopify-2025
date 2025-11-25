@@ -15,7 +15,7 @@
         "slide-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/HERO.png",
+            "image": "shopify://shop_images/250520_HEZEH_032_2e750f56-8fb3-401b-a700-060071ade811.jpg",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -38,7 +38,7 @@
         "layout": "full_bleed",
         "image_limit_height": true,
         "target_point_x": 50,
-        "target_point_y": 1,
+        "target_point_y": 10,
         "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
