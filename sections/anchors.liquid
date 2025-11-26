@@ -1,0 +1,93 @@
+{% comment %}
+  Anchors Section: Renders a list of anchor links to other sections. Each link is managed via blocks.
+{% endcomment %}
+
+<section class="anchors-section" style="--anchors-padding-top: {{ section.settings.padding_top | default: 20 }}px; --anchors-padding-bottom: {{ section.settings.padding_bottom | default: 20 }}px;">
+  <ul class="anchors-list">
+    {% for block in section.blocks %}
+      {% if block.type == 'link' %}
+        <li {{ block.shopify_attributes }}>
+          <a class="button" href="{{ block.settings.url }}">{{ block.settings.label }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+<style>
+    .anchors-section {
+      padding-top: var(--anchors-padding-top, 20px);
+      padding-bottom: var(--anchors-padding-bottom, 20px);
+    }
+    .anchors-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    .anchors-list li {
+      margin: 0;
+    }
+    .anchors-list .button {
+      background-color: transparent;
+    }
+</style>
+{% schema %}
+{
+  "name": "Anchors",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top (px)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom (px)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Link Label",
+          "default": "Section 1"
+        },
+        {
+          "type": "text",
+          "id": "url",
+          "label": "Link URL",
+          "default": "#section1"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Anchors",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

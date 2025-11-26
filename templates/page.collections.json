@@ -23,12 +23,246 @@
         "text_jkGnHJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec neque dignissim, pulvinar eros rutrum, sodales arcu. Nullam magna ex, mattis volutpat enim eu, cursus facilisis ante. Phasellus a ante at ipsum rutrum eleifend.<br/><br/></p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec neque dignissim, pulvinar eros rutrum, sodales arcu. Nullam magna ex, mattis volutpat enim eu, cursus facilisis ante. Phasellus a ante at ipsum rutrum eleifend.<br/></p>"
           }
         }
       },
       "block_order": [
         "text_jkGnHJ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "anchors_links": {
+      "type": "anchors",
+      "blocks": {
+        "link_zRfVpG": {
+          "type": "link",
+          "settings": {
+            "label": "Littoral",
+            "url": "#littoral"
+          }
+        },
+        "link_LBwDNC": {
+          "type": "link",
+          "settings": {
+            "label": "Workwear",
+            "url": "#workwear"
+          }
+        },
+        "link_qYfyNx": {
+          "type": "link",
+          "settings": {
+            "label": "Workwear Hiver",
+            "url": "#workwear-hiver"
+          }
+        }
+      },
+      "block_order": [
+        "link_zRfVpG",
+        "link_LBwDNC",
+        "link_qYfyNx"
+      ],
+      "name": "Anchors",
+      "settings": {}
+    },
+    "rich_text_jrUgcp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wBQrHn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Collection",
+            "heading_size": "pretitle"
+          }
+        },
+        "heading_cx6eUM": {
+          "type": "heading",
+          "settings": {
+            "heading": "H.01",
+            "heading_size": "flleft"
+          }
+        },
+        "heading_RwfqiJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Littoral",
+            "heading_size": "h1"
+          }
+        },
+        "heading_U3tDMq": {
+          "type": "heading",
+          "settings": {
+            "heading": "2025",
+            "heading_size": "flright"
+          }
+        },
+        "text_yEKg8q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cursus fames malesuada commodo rutrum pellentesque volutpat aliquam semper accumsan eleifend velit ullamcorper aliquam proin cursus tempus eu consequat sed suspendisse donec a mus volutpat convallis eleifend vehicula morbi mattis consequat praesent enim suspendisse enim fames convallis vitae enim tincidunt sed sit faucibus pellentesque sed at at proin quis ut.</p>"
+          }
+        },
+        "button_YVMGeL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Magasiner la collection H.02-2",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wBQrHn",
+        "heading_cx6eUM",
+        "heading_RwfqiJ",
+        "heading_U3tDMq",
+        "text_yEKg8q",
+        "button_YVMGeL"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_yc6CKQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JN9dDx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Collection",
+            "heading_size": "pretitle"
+          }
+        },
+        "heading_APbB4e": {
+          "type": "heading",
+          "settings": {
+            "heading": "H.02",
+            "heading_size": "flleft"
+          }
+        },
+        "heading_PwbHae": {
+          "type": "heading",
+          "settings": {
+            "heading": "Workwear",
+            "heading_size": "h1"
+          }
+        },
+        "heading_xkFJkF": {
+          "type": "heading",
+          "settings": {
+            "heading": "2025",
+            "heading_size": "flright"
+          }
+        },
+        "text_eHMqac": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cursus fames malesuada commodo rutrum pellentesque volutpat aliquam semper accumsan eleifend velit ullamcorper aliquam proin cursus tempus eu consequat sed suspendisse donec a mus volutpat convallis eleifend vehicula morbi mattis consequat praesent enim suspendisse enim fames convallis vitae enim tincidunt sed sit faucibus pellentesque sed at at proin quis ut.</p>"
+          }
+        },
+        "button_UVU4LE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Magasiner la collection H.02-2",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JN9dDx",
+        "heading_APbB4e",
+        "heading_PwbHae",
+        "heading_xkFJkF",
+        "text_eHMqac",
+        "button_UVU4LE"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_n798Yg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mEmAgb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Collection",
+            "heading_size": "pretitle"
+          }
+        },
+        "heading_EVMNHV": {
+          "type": "heading",
+          "settings": {
+            "heading": "H0-2.2",
+            "heading_size": "flleft"
+          }
+        },
+        "heading_Hk4UEN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Édition Hiver",
+            "heading_size": "h1"
+          }
+        },
+        "heading_Nb9mUj": {
+          "type": "heading",
+          "settings": {
+            "heading": "2025",
+            "heading_size": "flright"
+          }
+        },
+        "text_nwp384": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cursus fames malesuada commodo rutrum pellentesque volutpat aliquam semper accumsan eleifend velit ullamcorper aliquam proin cursus tempus eu consequat sed suspendisse donec a mus volutpat convallis eleifend vehicula morbi mattis consequat praesent enim suspendisse enim fames convallis vitae enim tincidunt sed sit faucibus pellentesque sed at at proin quis ut.</p>"
+          }
+        },
+        "button_tdkg7P": {
+          "type": "button",
+          "settings": {
+            "button_label": "Magasiner la collection H.02-2",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mEmAgb",
+        "heading_EVMNHV",
+        "heading_Hk4UEN",
+        "heading_Nb9mUj",
+        "text_nwp384",
+        "button_tdkg7P"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -43,6 +277,10 @@
   },
   "order": [
     "main",
-    "rich_text_3ekaR6"
+    "rich_text_3ekaR6",
+    "anchors_links",
+    "rich_text_jrUgcp",
+    "rich_text_yc6CKQ",
+    "rich_text_n798Yg"
   ]
 }
