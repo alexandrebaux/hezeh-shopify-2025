@@ -40,9 +40,32 @@
         "padding_bottom": 52
       }
     }
+      ,
+      "SimpleImageGrid_1": {
+        "type": "simple-image-grid",
+        "blocks": {
+          "block_1": {
+            "type": "image-block",
+            "settings": {
+              "image": "",
+              "title": "Sample Title",
+              "description": "Sample description for the image block."
+            }
+          }
+        },
+        "block_order": [
+          "block_1"
+        ],
+        "name": "SimpleImageGrid",
+        "settings": {
+          "padding_top": 32,
+          "padding_bottom": 32
+        }
+      }
   },
   "order": [
     "main",
-    "rich_text_3ekaR6"
+    "rich_text_3ekaR6",
+    "SimpleImageGrid_1"
   ]
 }
