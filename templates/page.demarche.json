@@ -39,33 +39,246 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    }
-      ,
-      "SimpleImageGrid_1": {
-        "type": "simple-image-grid",
-        "blocks": {
-          "block_1": {
-            "type": "image-block",
-            "settings": {
-              "image": "",
-              "title": "Sample Title",
-              "description": "Sample description for the image block."
-            }
+    },
+    "SimpleImageGrid_1": {
+      "type": "simple-image-grid",
+      "blocks": {
+        "image_block_QdMyqN": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/9aa4c95bf23c967ee2d6fcc08d3238fd499ec1d6.png",
+            "title": "Coupes",
+            "description": "Des coupes ; inspirées d’un vestiaire technique, souvent traditionnel et artisanal, où chaque détail à sa raison d’être, signature d’une richesse à la fois visuelle et fonctionnelle."
           }
         },
-        "block_order": [
-          "block_1"
-        ],
-        "name": "SimpleImageGrid",
-        "settings": {
-          "padding_top": 32,
-          "padding_bottom": 32
+        "image_block_ihYDAP": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/d0b437804986481e913dc295dd910b0fae56e301_1.png",
+            "title": "Matières",
+            "description": "Des matières; chutes de grandes maisons, tissus de seconde main ou textiles usuels qui viennent être transformés et réinventés pour laisser à chacun l’occasion d’exprimer toute sa singularité."
+          }
+        },
+        "block_1": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/c82526cba75abcd17bcb9c6fb02d7cf829fbcdac.png",
+            "title": "Teintes",
+            "description": "Des teintes ; toujours naturelles, dont les infinies mais subtiles variations sont un écho au vécu et au vivant, ainsi qu’aux éléments qui nous entourent."
+          }
         }
+      },
+      "block_order": [
+        "image_block_QdMyqN",
+        "image_block_ihYDAP",
+        "block_1"
+      ],
+      "name": "SimpleImageGrid",
+      "settings": {
+        "padding_top": 32,
+        "padding_bottom": 32
       }
+    },
+    "image_with_text_iRPrHz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ULnRrk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h2"
+          }
+        },
+        "text_K8B9Jk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_dm6ad4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ULnRrk",
+        "text_K8B9Jk",
+        "button_dm6ad4"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/d0b437804986481e913dc295dd910b0fae56e301_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_wbn4jC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DPhAdP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h2"
+          }
+        },
+        "text_rU4U79": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_GYafew": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DPhAdP",
+        "text_rU4U79",
+        "button_GYafew"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/71d3c8ef44aa01e118f47b37d6e873f9991a1c32.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_hn4m47": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Ff6jR7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h2"
+          }
+        },
+        "text_erbYAc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_f9LPWf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ff6jR7",
+        "text_erbYAc",
+        "button_f9LPWf"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/fd2e96f4b9f28c56005764930d1d283b820b2527.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_YpraDd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hhJEcy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h2"
+          }
+        },
+        "text_BzMLVV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_BkqqAf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hhJEcy",
+        "text_BzMLVV",
+        "button_BkqqAf"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/91896b381f87d805655b6614ff22357d343e3e6d.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
   },
   "order": [
     "main",
     "rich_text_3ekaR6",
-    "SimpleImageGrid_1"
+    "SimpleImageGrid_1",
+    "image_with_text_iRPrHz",
+    "image_with_text_wbn4jC",
+    "image_with_text_hn4m47",
+    "image_with_text_YpraDd"
   ]
 }

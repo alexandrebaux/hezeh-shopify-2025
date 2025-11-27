@@ -6,30 +6,19 @@
 <section class="simple-image-grid">
   <div class="simple-image-grid__container">
     {% for block in section.blocks %}
-      <div class="simple-image-grid__block">
+      <div class="simple-image-grid__block" {{ block.shopify_attributes }}> 
         {% if block.settings.image %}
-          <img src="{{ block.settings.image }}" alt="{{ block.settings.title }}" class="simple-image-grid__image" />
+          <img src="{{ block.settings.image | img_url: '600x600' }}" alt="{{ block.settings.image.alt | escape }}" class="simple-image-grid__image" loading="lazy">
         {% endif %}
         <h3 class="simple-image-grid__title">{{ block.settings.title }}</h3>
         <p class="simple-image-grid__description">{{ block.settings.description }}</p>
       </div>
     {% endfor %}
+    <div class="simple-image-grid__block"> </div>
+    <div class="simple-image-grid__block"> </div>
+    <div class="simple-image-grid__block"> </div>
   </div>
 </section>
-
-<style>
-.simple-image-grid {
-  padding-top: {{ section.settings.padding_top }}px;
-  padding-bottom: {{ section.settings.padding_bottom }}px;
-}
-.simple-image-grid__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-  max-width: var(--page-width);
-}
-</style>
 
 {% schema %}
 {
@@ -90,24 +79,27 @@
 {% endschema %}
 
 {% style %}
+
+.simple-image-grid {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+}
 .simple-image-grid__container {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+  max-width: var(--page-width);
+  margin: 0 auto;
 }
 .simple-image-grid__block {
-  width: 300px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 16px;
+  flex: 1 1 350px;
+  box-sizing: border-box;
   text-align: center;
 }
 .simple-image-grid__image {
   width: 100%;
   height: auto;
-  border-radius: 4px;
   margin-bottom: 12px;
 }
 .simple-image-grid__title {
