@@ -25,6 +25,30 @@
   "name": "SimpleImageGrid",
   "settings": [
     {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "Adapt to image"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait"
+        },
+        {
+          "value": "square",
+          "label": "Square"
+        },
+        {
+          "value": "landscape",
+          "label": "Landscape"
+        }
+      ],
+      "default": "portrait",
+      "label": "Image ratio"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "label": "Padding Top",
@@ -103,7 +127,15 @@
   margin-bottom: 12px;
   object-fit: cover;
   object-position: center;
-  aspect-ratio: 460 / 600;
+  {% if section.settings.image_ratio == 'portrait' %}
+    aspect-ratio: 460 / 600;
+  {% elsif section.settings.image_ratio == 'square' %}
+    aspect-ratio: 1 / 1;
+  {% elsif section.settings.image_ratio == 'landscape' %}
+    aspect-ratio: 16 / 9;
+  {% else %}
+    aspect-ratio: auto;
+  {% endif %}
 }
 .simple-image-grid__title {
   font-weight: 300;
