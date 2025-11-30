@@ -30,9 +30,17 @@
     position: absolute;
     width: 100%;
     max-width: {{ section.settings.max_width }}px;
+    padding: 0 3rem;
     height: 100%;
     object-fit: cover;
     z-index: 1;
+  }
+  .grand-texte-background__content p {
+    font-weight: 300;
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 110%;
+    letter-spacing: 0;
+    text-align: center;
   }
   
   .grand-texte-background__image {
@@ -45,13 +53,7 @@
     z-index: -1;
   }
   
-  .grand-texte-background__content p {
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 110%;
-    letter-spacing: 0;
-    text-align: center;
-  }
+
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
