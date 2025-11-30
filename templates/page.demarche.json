@@ -36,6 +36,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "max_width": 750,
         "padding_top": 100,
         "padding_bottom": 52
       }
@@ -78,6 +79,15 @@
         "image_ratio": "portrait",
         "padding_top": 100,
         "padding_bottom": 32
+      }
+    },
+    "grand_texte_et_background_1": {
+      "type": "grand-texte-et-background",
+      "settings": {
+        "text": "<p>HEZEH, ce sont des pièces qui s’attachent à donner de la noblesse à l’épure, qui sont le fruit d’une recherche d’harmonie entre simplicité et raffinement.<br/></p><p>HEZEH, c’est une invitation à prendre le temps de ralentir, d'ouvrir son regard, de changer de perspective. </p><p><br/>Ce sont des pièces singulières, pensées pour vivre en mouvement, à l’épreuve de la vie et du temps. Dessinées avec passion et convictions, fabriquées à Paris, en éditions limitées. </p>",
+        "image": "shopify://shop_images/Calque_1.png",
+        "padding_top": 36,
+        "padding_bottom": 100
       }
     },
     "image_with_text_iRPrHz": {
@@ -268,6 +278,7 @@
     "main",
     "rich_text_3ekaR6",
     "SimpleImageGrid_1",
+    "grand_texte_et_background_1",
     "image_with_text_iRPrHz",
     "image_with_text_wbn4jC",
     "image_with_text_hn4m47",

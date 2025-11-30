@@ -1,0 +1,136 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .grand-texte-background__wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    text-align: center;
+  }
+
+  
+  .grand-texte-background__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    max-width: {{ section.settings.max_width }}px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .grand-texte-background__image {
+    position: relative;
+    padding: 2rem;
+    width: 972px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  
+  .grand-texte-background__content p {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 110%;
+    letter-spacing: 0;
+    text-align: center;
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding">
+  <div class="grand-texte-background__wrapper">
+    {%- if section.settings.image != blank -%}
+      {{ section.settings.image | image_url: width: 3840 | image_tag:
+        loading: 'lazy',
+        width: section.settings.image.width,
+        height: section.settings.image.height,
+        class: 'grand-texte-background__image',
+        sizes: '100vw',
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+      }}
+    {%- endif -%}
+    
+    <div class="grand-texte-background__content">
+      {%- if section.settings.text != blank -%}
+        {{ section.settings.text }}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Grand texte et Background",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texte",
+      "default": "<p>Ajoutez votre texte ici.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image de fond"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 400,
+      "max": 1600,
+      "step": 25,
+      "unit": "px",
+      "label": "Largeur maximale",
+      "default": 750
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding haut",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bas",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Grand texte et Background"
+    }
+  ]
+}
+{% endschema %}
