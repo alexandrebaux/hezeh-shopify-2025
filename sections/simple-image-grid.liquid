@@ -107,17 +107,19 @@
 .simple-image-grid {
   padding-top: {{ section.settings.padding_top }}px;
   padding-bottom: {{ section.settings.padding_bottom }}px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .simple-image-grid__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 16px;
   justify-content: center;
   max-width: var(--page-width);
   margin: 0 auto;
 }
 .simple-image-grid__block {
-  flex: 1 1 350px;
+  flex: 1 1 clamp(320px, calc(33% - 16px), 480px);
   box-sizing: border-box;
   text-align: center;
 }
