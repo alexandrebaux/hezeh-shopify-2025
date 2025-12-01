@@ -86,14 +86,28 @@
       "settings": {
         "text": "<p>HEZEH, ce sont des pièces qui s’attachent à donner de la noblesse à l’épure, qui sont le fruit d’une recherche d’harmonie entre simplicité et raffinement.<br/></p><p>HEZEH, c’est une invitation à prendre le temps de ralentir, d'ouvrir son regard, de changer de perspective. </p><p><br/>Ce sont des pièces singulières, pensées pour vivre en mouvement, à l’épreuve de la vie et du temps. Dessinées avec passion et convictions, fabriquées à Paris, en éditions limitées. </p>",
         "image": "shopify://shop_images/Calque_1.png",
+        "max_width": 750,
         "padding_top": 36,
         "padding_bottom": 100
+      }
+    },
+    "simple_image_V4FmfY": {
+      "type": "simple-image",
+      "name": "Simple Image",
+      "settings": {
+        "image": "shopify://shop_images/3658548d6adf9a7a9b48fb6e6d5d460984156a50.png",
+        "max_width": 1500,
+        "image_ratio": "custom",
+        "custom_image_ratio": "1057/638",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "grand_texte_et_background_VtnhRP": {
       "type": "grand-texte-et-background",
       "settings": {
         "text": "<p>Toutes les pièces HEZEH sont le fruit d’un travail de recherche à la croisée entre esthétique, savoir-faire, matérialité, sensorialité et respect de l’environnement.</p><p>De nos inspirations, aux détails qui n’en sont pas, du choix des matières jusqu’à la confection, chaque étape permet de développer le langage visuel de chaque pièce et de l’ancrer dans une démarche qui repense nos façons de produire et de consommer. </p><p>HEZEH, ce sont des pièces qui traduisent notre volonté de rendre visible l’invisible : sublimer ce qui est simple, révéler la beauté de l’imperfection, célébrer le geste lent dans un monde pressé.<br/></p>",
+        "max_width": 750,
         "padding_top": 36,
         "padding_bottom": 100
       }
@@ -287,6 +301,7 @@
     "rich_text_3ekaR6",
     "SimpleImageGrid_1",
     "grand_texte_et_background_1",
+    "simple_image_V4FmfY",
     "grand_texte_et_background_VtnhRP",
     "image_with_text_iRPrHz",
     "image_with_text_wbn4jC",
