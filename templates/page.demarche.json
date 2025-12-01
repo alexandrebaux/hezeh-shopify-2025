@@ -90,6 +90,14 @@
         "padding_bottom": 100
       }
     },
+    "grand_texte_et_background_VtnhRP": {
+      "type": "grand-texte-et-background",
+      "settings": {
+        "text": "<p>Toutes les pièces HEZEH sont le fruit d’un travail de recherche à la croisée entre esthétique, savoir-faire, matérialité, sensorialité et respect de l’environnement.</p><p>De nos inspirations, aux détails qui n’en sont pas, du choix des matières jusqu’à la confection, chaque étape permet de développer le langage visuel de chaque pièce et de l’ancrer dans une démarche qui repense nos façons de produire et de consommer. </p><p>HEZEH, ce sont des pièces qui traduisent notre volonté de rendre visible l’invisible : sublimer ce qui est simple, révéler la beauté de l’imperfection, célébrer le geste lent dans un monde pressé.<br/></p>",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
     "image_with_text_iRPrHz": {
       "type": "image-with-text",
       "blocks": {
@@ -279,6 +287,7 @@
     "rich_text_3ekaR6",
     "SimpleImageGrid_1",
     "grand_texte_et_background_1",
+    "grand_texte_et_background_VtnhRP",
     "image_with_text_iRPrHz",
     "image_with_text_wbn4jC",
     "image_with_text_hn4m47",

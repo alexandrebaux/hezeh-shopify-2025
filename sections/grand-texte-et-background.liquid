@@ -35,6 +35,10 @@
     object-fit: cover;
     z-index: 1;
   }
+
+  .grand-texte-background__content.grand-texte-background__content--no-image {
+    position: relative;
+  }
   .grand-texte-background__content p {
     font-weight: 300;
     font-size: clamp(20px, 2vw, 28px);
@@ -69,7 +73,7 @@
       }}
     {%- endif -%}
     
-    <div class="grand-texte-background__content">
+    <div class="grand-texte-background__content{% if section.settings.image == blank %} grand-texte-background__content--no-image{% endif %}">
       {%- if section.settings.text != blank -%}
         {{ section.settings.text }}
       {%- endif -%}
