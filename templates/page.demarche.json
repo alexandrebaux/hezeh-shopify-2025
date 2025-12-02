@@ -269,6 +269,92 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_BWbUD8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WeM8jm": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "pretitle"
+          }
+        },
+        "heading_8RRgad": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "flleft"
+          }
+        },
+        "heading_N8tyeP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pièces d'exception faites à la main à Paris.",
+            "heading_size": "h1"
+          }
+        },
+        "heading_HQ4TP6": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "flright"
+          }
+        },
+        "text_Kxy6Ba": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Concues dans un atelier à taille humaine, chaque création est réalisée sur précommande, utilisant des tissus upcyclés exceptionnels et teinture naturelle en café, thé et brou de noix.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WeM8jm",
+        "heading_8RRgad",
+        "heading_N8tyeP",
+        "heading_HQ4TP6",
+        "text_Kxy6Ba"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "max_width": 750,
+        "title_min_width": 325,
+        "title_max_width": 425,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_gFpHp8": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 72
+      }
     }
   },
   "order": [
@@ -281,6 +367,8 @@
     "image_with_text_iRPrHz",
     "image_with_text_wbn4jC",
     "image_with_text_hn4m47",
-    "image_with_text_YpraDd"
+    "image_with_text_YpraDd",
+    "rich_text_BWbUD8",
+    "featured_collection_gFpHp8"
   ]
 }
