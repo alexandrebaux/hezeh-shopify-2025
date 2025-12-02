@@ -120,3 +120,10 @@
 .rich-text__buttons .button {
   background: transparent;
 }
+
+.rich-text__heading.h1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: clamp(calc(var(--title_min_width) * 1px), calc( (var(--title_max_width) / 1440) * 100vw) ,calc(var(--title_max_width) * 1px));
+}

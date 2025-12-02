@@ -4,6 +4,8 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    --title_min_width: {{ section.settings.title_min_width }};
+    --title_max_width: {{ section.settings.title_max_width }};
   }
 
   .section-{{ section.id }}-padding .rich-text__wrapper {
@@ -183,22 +185,22 @@
     {
       "type": "range",
       "id": "title_min_width",
-      "min": 300,
-      "max": 750,
-      "step": 50,
+      "min": 250,
+      "max": 1000,
+      "step": 25,
       "unit": "px",
       "label": "Title min width",
-      "default": 300
+      "default": 250
     },
     {
       "type": "range",
       "id": "title_max_width",
-      "min": 500,
-      "max": 1500,
-      "step": 50,
+      "min": 250,
+      "max": 1000,
+      "step": 25,
       "unit": "px",
       "label": "Title max width",
-      "default": 1500
+      "default": 1000
     },
     {
       "type": "header",

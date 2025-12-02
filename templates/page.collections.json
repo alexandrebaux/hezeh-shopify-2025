@@ -37,6 +37,8 @@
         "color_scheme": "",
         "full_width": true,
         "max_width": 750,
+        "title_min_width": 300,
+        "title_max_width": 1500,
         "padding_top": 100,
         "padding_bottom": 0
       }
@@ -83,7 +85,7 @@
         "heading_wBQrHn": {
           "type": "heading",
           "settings": {
-            "heading": "Collection", 
+            "heading": "Collection",
             "heading_size": "pretitle"
           }
         },
@@ -141,6 +143,8 @@
         "color_scheme": "",
         "full_width": true,
         "max_width": 750,
+        "title_min_width": 300,
+        "title_max_width": 1500,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -270,6 +274,8 @@
         "color_scheme": "",
         "full_width": true,
         "max_width": 750,
+        "title_min_width": 300,
+        "title_max_width": 1500,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -399,6 +405,8 @@
         "color_scheme": "",
         "full_width": true,
         "max_width": 750,
+        "title_min_width": 300,
+        "title_max_width": 1500,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -516,6 +524,8 @@
         "color_scheme": "",
         "full_width": true,
         "max_width": 750,
+        "title_min_width": 300,
+        "title_max_width": 500,
         "padding_top": 40,
         "padding_bottom": 52
       }
