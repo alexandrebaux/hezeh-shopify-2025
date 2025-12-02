@@ -524,8 +524,8 @@
         "color_scheme": "",
         "full_width": true,
         "max_width": 750,
-        "title_min_width": 300,
-        "title_max_width": 500,
+        "title_min_width": 325,
+        "title_max_width": 425,
         "padding_top": 40,
         "padding_bottom": 52
       }
