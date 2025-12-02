@@ -37,6 +37,8 @@
         "color_scheme": "",
         "full_width": true,
         "max_width": 750,
+        "title_min_width": 250,
+        "title_max_width": 1000,
         "padding_top": 100,
         "padding_bottom": 52
       }
@@ -84,7 +86,7 @@
     "grand_texte_et_background_1": {
       "type": "grand-texte-et-background",
       "settings": {
-        "text": "<p>HEZEH, ce sont des pièces qui s’attachent à donner de la noblesse à l’épure, qui sont le fruit d’une recherche d’harmonie entre simplicité et raffinement.<br/></p><p>HEZEH, c’est une invitation à prendre le temps de ralentir, d'ouvrir son regard, de changer de perspective. </p><p><br/>Ce sont des pièces singulières, pensées pour vivre en mouvement, à l’épreuve de la vie et du temps. Dessinées avec passion et convictions, fabriquées à Paris, en éditions limitées. </p>",
+        "text": "<p>HEZEH, ce sont des pièces qui s’attachent à donner de la noblesse à l’épure, qui sont le fruit d’une recherche d’harmonie entre simplicité et raffinement.</p><p>HEZEH, c’est une invitation à prendre le temps de ralentir, d'ouvrir son regard, de changer de perspective. </p><p>Ce sont des pièces singulières, pensées pour vivre en mouvement, à l’épreuve de la vie et du temps. Dessinées avec passion et convictions, fabriquées à Paris, en éditions limitées. </p>",
         "image": "shopify://shop_images/Calque_1.png",
         "max_width": 750,
         "padding_top": 36,
@@ -157,30 +159,21 @@
         "heading_DPhAdP": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Teinture végétale",
             "heading_size": "h2"
           }
         },
         "text_rU4U79": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Nos pièces en draps anciens sont teintées à partir de teintures végétales, non chimiques et respectueuses de l’environnement, dans la lignée de notre démarche et de nos convictions. </p><p>Nous travaillons essentiellement à partir de trois composants : le café, le brou de noix et le thé. Ces pigments naturels permettent d’obtenir des teintes sobres et minérales, aux variations subtiles qui renforcent le caractère unique de chaque pièce et participent à sa deuxième vie.</p>",
             "text_style": "body"
-          }
-        },
-        "button_GYafew": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_DPhAdP",
-        "text_rU4U79",
-        "button_GYafew"
+        "text_rU4U79"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -205,30 +198,21 @@
         "heading_Ff6jR7": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Éditions limitées",
             "heading_size": "h2"
           }
         },
         "text_erbYAc": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>En raison du choix et de l’origine de nos tissus, chaque pièce ne peut être faite qu’en un petit nombre d'exemplaires. Nos coupes existent parfois en plusieurs matières mais le nombre de pièces “similaires” est minime —une dizaine seulement. Pour les pièces teintées, chaque pièce est unique du fait des légères variations de couleurs qui peuvent exister.</p><p>HEZEH, c’est un vestiaire de pièces exclusives, réalisées en éditions limitées.</p>",
             "text_style": "body"
-          }
-        },
-        "button_f9LPWf": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_Ff6jR7",
-        "text_erbYAc",
-        "button_f9LPWf"
+        "text_erbYAc"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -253,30 +237,21 @@
         "heading_hhJEcy": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Production à la demande",
             "heading_size": "h2"
           }
         },
         "text_BzMLVV": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Toutes nos pièces sont confectionnées à la demande, dans notre atelier à Paris ; une manière pour nous de pouvoir répondre à chaque demande de manière particulière (choix des matières pour certaines pièces par exemple), et d’éviter toute surproduction.</p>",
             "text_style": "body"
-          }
-        },
-        "button_BkqqAf": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_hhJEcy",
-        "text_BzMLVV",
-        "button_BkqqAf"
+        "text_BzMLVV"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {

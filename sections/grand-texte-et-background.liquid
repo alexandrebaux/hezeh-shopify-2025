@@ -40,6 +40,7 @@
     position: relative;
   }
   .grand-texte-background__content p {
+    display: block;
     font-weight: 300;
     font-size: clamp(20px, 2vw, 28px);
     line-height: 110%;
@@ -75,7 +76,7 @@
     
     <div class="grand-texte-background__content{% if section.settings.image == blank %} grand-texte-background__content--no-image{% endif %}">
       {%- if section.settings.text != blank -%}
-        {{ section.settings.text }}
+        <div>{{ section.settings.text }}</div>
       {%- endif -%}
     </div>
   </div>
