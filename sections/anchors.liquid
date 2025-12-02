@@ -3,6 +3,20 @@
 {% endcomment %}
 
 <section class="anchors-section" style="--anchors-padding-top: {{ section.settings.padding_top | default: 20 }}px; --anchors-padding-bottom: {{ section.settings.padding_bottom | default: 20 }}px;">
+  <div class="anchors-list-mobile">
+    <div class="select">
+      <select class="select__select" onchange="if(this.value) window.location.href=this.value;" aria-label="Anchors">
+        <option value="" disabled selected>Scroll to</option>
+        {% for block in section.blocks %}
+          {% if block.type == 'link' %}
+            <option value="{{ block.settings.url }}">{{ block.settings.label }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+      {% render 'icon-caret' %}
+    </div>
+  </div>
+
   <ul class="anchors-list">
     {% for block in section.blocks %}
       {% if block.type == 'link' %}
@@ -32,6 +46,46 @@
     }
     .anchors-list .button {
       background-color: transparent;
+    }
+
+    .anchors-list-mobile {
+      display: none;
+      width: 100%;
+      padding: 0 1.5rem;
+      box-sizing: border-box;
+      text-align: center;
+      --color-background: 228, 223, 209;  
+    }
+
+    .anchors-list-mobile .select {
+      display: inline-flex;
+      width: auto;
+      min-width: 180px;
+    }
+
+    @media screen and (max-width: 749px) {
+      .anchors-section {
+        /* Hide the desktop anchors on mobile to avoid duplication with the mobile version */
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+      }
+      .anchors-list {
+        display: none;
+      }
+      .anchors-list-mobile {
+        display: block;
+      }
+      .anchors-list-mobile .select__select {
+        width: 100%;
+      }
+      .anchors-list-mobile .icon-caret {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        height: 0.6rem;
+      }
     }
 </style>
 {% schema %}
