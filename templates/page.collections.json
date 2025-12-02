@@ -36,6 +36,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "max_width": 750,
         "padding_top": 100,
         "padding_bottom": 0
       }
@@ -83,28 +84,32 @@
           "type": "heading",
           "settings": {
             "heading": "Collection",
-            "heading_size": "pretitle"
+            "heading_size": "pretitle",
+            "max_width": 1000
           }
         },
         "heading_cx6eUM": {
           "type": "heading",
           "settings": {
             "heading": "H.01",
-            "heading_size": "flleft"
+            "heading_size": "flleft",
+            "max_width": 1000
           }
         },
         "heading_RwfqiJ": {
           "type": "heading",
           "settings": {
             "heading": "Littoral",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "max_width": 1000
           }
         },
         "heading_U3tDMq": {
           "type": "heading",
           "settings": {
             "heading": "2025",
-            "heading_size": "flright"
+            "heading_size": "flright",
+            "max_width": 1000
           }
         },
         "text_yEKg8q": {
@@ -139,6 +144,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "max_width": 750,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -211,28 +217,32 @@
           "type": "heading",
           "settings": {
             "heading": "Collection",
-            "heading_size": "pretitle"
+            "heading_size": "pretitle",
+            "max_width": 1000
           }
         },
         "heading_APbB4e": {
           "type": "heading",
           "settings": {
             "heading": "H.02",
-            "heading_size": "flleft"
+            "heading_size": "flleft",
+            "max_width": 1000
           }
         },
         "heading_PwbHae": {
           "type": "heading",
           "settings": {
             "heading": "Workwear",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "max_width": 1000
           }
         },
         "heading_xkFJkF": {
           "type": "heading",
           "settings": {
             "heading": "2025",
-            "heading_size": "flright"
+            "heading_size": "flright",
+            "max_width": 1000
           }
         },
         "text_eHMqac": {
@@ -267,6 +277,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "max_width": 750,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -339,28 +350,32 @@
           "type": "heading",
           "settings": {
             "heading": "Collection",
-            "heading_size": "pretitle"
+            "heading_size": "pretitle",
+            "max_width": 1000
           }
         },
         "heading_EVMNHV": {
           "type": "heading",
           "settings": {
             "heading": "H0-2.2",
-            "heading_size": "flleft"
+            "heading_size": "flleft",
+            "max_width": 1000
           }
         },
         "heading_Hk4UEN": {
           "type": "heading",
           "settings": {
             "heading": "Édition Hiver",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "max_width": 1000
           }
         },
         "heading_Nb9mUj": {
           "type": "heading",
           "settings": {
             "heading": "2025",
-            "heading_size": "flright"
+            "heading_size": "flright",
+            "max_width": 1000
           }
         },
         "text_nwp384": {
@@ -395,6 +410,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "max_width": 750,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -459,6 +475,94 @@
         "margin_bottom": 100,
         "grid_max_width": 1440
       }
+    },
+    "rich_text_zwg6zx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UUpHUM": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "pretitle",
+            "max_width": 1000
+          }
+        },
+        "heading_zjg8DK": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "flleft",
+            "max_width": 1000
+          }
+        },
+        "heading_BgaQei": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pièces d'exception faites à la main à Paris.",
+            "heading_size": "h1",
+            "max_width": 380
+          }
+        },
+        "heading_jJxmcG": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "flright",
+            "max_width": 1000
+          }
+        },
+        "text_Hi8rnk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Concues dans un atelier à taille humaine, chaque création est réalisée sur précommande, utilisant des tissus upcyclés exceptionnels et teinture naturelle en café, thé et brou de noix.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UUpHUM",
+        "heading_zjg8DK",
+        "heading_BgaQei",
+        "heading_jJxmcG",
+        "text_Hi8rnk"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "max_width": 750,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_erjtxM": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 72
+      }
     }
   },
   "order": [
@@ -470,6 +574,8 @@
     "rich_text_yc6CKQ",
     "grid_v2_mPnUDQ",
     "rich_text_n798Yg",
-    "grid_v2_GaMGFk"
+    "grid_v2_GaMGFk",
+    "rich_text_zwg6zx",
+    "featured_collection_erjtxM"
   ]
 }

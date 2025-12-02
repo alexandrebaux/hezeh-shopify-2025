@@ -38,9 +38,9 @@
               <h2
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
+                style="max-width: {{ block.settings.max_width }}px;{% if section.settings.content_alignment == 'center' %} margin-left: auto; margin-right: auto;{% elsif section.settings.content_alignment == 'right' %} margin-left: auto; margin-right: 0;{% endif %}{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }};{% endif %}"
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
-                  style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
                 {{ block.settings.heading }}
@@ -252,6 +252,16 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "range",
+          "id": "max_width",
+          "min": 100,
+          "max": 1000,
+          "step": 10,
+          "unit": "px",
+          "label": "Max width",
+          "default": 1000
         }
       ]
     },
