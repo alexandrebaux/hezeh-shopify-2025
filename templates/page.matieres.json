@@ -1,0 +1,215 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_3ekaR6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EbQ9xB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nos matières",
+            "heading_size": "h1"
+          }
+        },
+        "text_jkGnHJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Socks polyjuice scabbers dragon-scale poltergeist ground forbidden owl knut snivellus dog flourish together red hunt fawkes knut mrs bludger start-of-term bathrooms polyjuice he daily daisies bezoar ridgeback aurors shunpike chocolate grayback prophet elemental.</p><p>Beaters lion downfall ‘zis goblet feather glass centaur second 20 biting chocolate voldemort ghost ravenclaw’s ravenclaw’s wand charm parchment knut ginny chasers dobby mrs requirement cleansweep daisies with bezoar cores godric’s yer wormtail gamp’s lily spectacles bonnet shack kedavra mistletoe minister broomstick willow phoenix where tears unwilling mewing every alohamora bright love. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EbQ9xB",
+        "text_jkGnHJ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "max_width": 750,
+        "title_min_width": 250,
+        "title_max_width": 1000,
+        "padding_top": 100,
+        "padding_bottom": 52
+      }
+    },
+    "SimpleImageGrid_1": {
+      "type": "simple-image-grid",
+      "blocks": {
+        "image_block_QdMyqN": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/946b5a155e1e16d3371eed2ba14a4b0f3b9ac736.jpg",
+            "title": "Lin",
+            "description": "Diadem parchment golden patronus half-giant servant who wheels many cottage treats cutting lady newt charm fairy bedroom hedwig horntail carriages erised sorting stunning wand hungarian aragog professor bezoar you-know-who dervish ghost fairy hoops restricted holly quidditch treacle red smile ‘zis room toad-like would pumpkin together suits not bertie cloak world bonnet stan rise pumpkin pumpkin our or whomping shunpike yew."
+          }
+        },
+        "image_block_bTYTrj": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/1888dd8d66b05e4e7653fca538bfd99fc20d594b.jpg",
+            "title": "Lin",
+            "description": "Diadem parchment golden patronus half-giant servant who wheels many cottage treats cutting lady newt charm fairy bedroom hedwig horntail carriages erised sorting stunning wand hungarian aragog professor bezoar you-know-who dervish ghost fairy hoops restricted holly quidditch treacle red smile ‘zis room toad-like would pumpkin together suits not bertie cloak world bonnet stan rise pumpkin pumpkin our or whomping shunpike yew."
+          }
+        },
+        "image_block_qXA9gC": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/88e9247d195a1658aff929379fdc2f4d83d6fb26.jpg",
+            "title": "Lin",
+            "description": "Diadem parchment golden patronus half-giant servant who wheels many cottage treats cutting lady newt charm fairy bedroom hedwig horntail carriages erised sorting stunning wand hungarian aragog professor bezoar you-know-who dervish ghost fairy hoops restricted holly quidditch treacle red smile ‘zis room toad-like would pumpkin together suits not bertie cloak world bonnet stan rise pumpkin pumpkin our or whomping shunpike yew."
+          }
+        },
+        "image_block_JPXdV7": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/d332d07c355a6fc5ad7d108bb04c3af4949a608f.jpg",
+            "title": "Lin",
+            "description": "Diadem parchment golden patronus half-giant servant who wheels many cottage treats cutting lady newt charm fairy bedroom hedwig horntail carriages erised sorting stunning wand hungarian aragog professor bezoar you-know-who dervish ghost fairy hoops restricted holly quidditch treacle red smile ‘zis room toad-like would pumpkin together suits not bertie cloak world bonnet stan rise pumpkin pumpkin our or whomping shunpike yew."
+          }
+        },
+        "image_block_ae3YtB": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/81ee535b842322e470f1f9b5d6d71eb2428a8078.jpg",
+            "title": "Lin",
+            "description": "Diadem parchment golden patronus half-giant servant who wheels many cottage treats cutting lady newt charm fairy bedroom hedwig horntail carriages erised sorting stunning wand hungarian aragog professor bezoar you-know-who dervish ghost fairy hoops restricted holly quidditch treacle red smile ‘zis room toad-like would pumpkin together suits not bertie cloak world bonnet stan rise pumpkin pumpkin our or whomping shunpike yew."
+          }
+        },
+        "image_block_agQraz": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/1656b49cdd3f06060f27f2f187b696dc4ab1b407.jpg",
+            "title": "Lin",
+            "description": "Diadem parchment golden patronus half-giant servant who wheels many cottage treats cutting lady newt charm fairy bedroom hedwig horntail carriages erised sorting stunning wand hungarian aragog professor bezoar you-know-who dervish ghost fairy hoops restricted holly quidditch treacle red smile ‘zis room toad-like would pumpkin together suits not bertie cloak world bonnet stan rise pumpkin pumpkin our or whomping shunpike yew."
+          }
+        }
+      },
+      "block_order": [
+        "image_block_QdMyqN",
+        "image_block_bTYTrj",
+        "image_block_qXA9gC",
+        "image_block_JPXdV7",
+        "image_block_ae3YtB",
+        "image_block_agQraz"
+      ],
+      "name": "SimpleImageGrid",
+      "settings": {
+        "image_ratio": "portrait",
+        "padding_top": 52,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_BWbUD8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WeM8jm": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "pretitle"
+          }
+        },
+        "heading_8RRgad": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "flleft"
+          }
+        },
+        "heading_N8tyeP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pièces d'exception faites à la main à Paris.",
+            "heading_size": "h1"
+          }
+        },
+        "heading_HQ4TP6": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "flright"
+          }
+        },
+        "text_Kxy6Ba": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Concues dans un atelier à taille humaine, chaque création est réalisée sur précommande, utilisant des tissus upcyclés exceptionnels et teinture naturelle en café, thé et brou de noix.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WeM8jm",
+        "heading_8RRgad",
+        "heading_N8tyeP",
+        "heading_HQ4TP6",
+        "text_Kxy6Ba"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "max_width": 750,
+        "title_min_width": 325,
+        "title_max_width": 425,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_gFpHp8": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_3ekaR6",
+    "SimpleImageGrid_1",
+    "rich_text_BWbUD8",
+    "featured_collection_gFpHp8"
+  ]
+}
