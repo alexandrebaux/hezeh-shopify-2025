@@ -86,20 +86,6 @@
         "target_id": "littoral"
       }
     },
-    "scroll_target_Q7EMxP": {
-      "type": "scroll-target",
-      "name": "Scroll Target",
-      "settings": {
-        "target_id": "workwear"
-      }
-    },
-    "scroll_target_ikeFxp": {
-      "type": "scroll-target",
-      "name": "Scroll Target",
-      "settings": {
-        "target_id": "workwear-hiver"
-      }
-    },
     "rich_text_jrUgcp": {
       "type": "rich-text",
       "blocks": {
@@ -140,8 +126,8 @@
         "button_YVMGeL": {
           "type": "button",
           "settings": {
-            "button_label": "Magasiner la collection H.02-2",
-            "button_link": "#",
+            "button_label": "Magasiner la collection H.01",
+            "button_link": "shopify://collections/frontpage",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -231,6 +217,13 @@
         "grid_max_width": 1440
       }
     },
+    "scroll_target_Q7EMxP": {
+      "type": "scroll-target",
+      "name": "Scroll Target",
+      "settings": {
+        "target_id": "workwear"
+      }
+    },
     "rich_text_yc6CKQ": {
       "type": "rich-text",
       "blocks": {
@@ -244,7 +237,7 @@
         "heading_APbB4e": {
           "type": "heading",
           "settings": {
-            "heading": "H.02",
+            "heading": "H.02-1",
             "heading_size": "flleft"
           }
         },
@@ -271,8 +264,8 @@
         "button_UVU4LE": {
           "type": "button",
           "settings": {
-            "button_label": "Magasiner la collection H.02-2",
-            "button_link": "#",
+            "button_label": "Magasiner la collection H.02-1",
+            "button_link": "shopify://collections/la-collection-h-02",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -362,6 +355,13 @@
         "grid_max_width": 1440
       }
     },
+    "scroll_target_ikeFxp": {
+      "type": "scroll-target",
+      "name": "Scroll Target",
+      "settings": {
+        "target_id": "workwear-hiver"
+      }
+    },
     "rich_text_n798Yg": {
       "type": "rich-text",
       "blocks": {
@@ -403,7 +403,7 @@
           "type": "button",
           "settings": {
             "button_label": "Magasiner la collection H.02-2",
-            "button_link": "#",
+            "button_link": "shopify://collections/h-02-edition-d-ete",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
