@@ -1,0 +1,35 @@
+{%- assign target_id = section.settings.target_id | escape -%}
+
+<div id="{{ target_id }}" class="scroll-target-section">
+  {%- if request.design_mode -%}
+    <div style="padding: 1rem; background-color: #123456; border: 1px dashed #ccc; text-align: center; font-family: monospace; color: #fff;">
+      {%- if target_id != blank -%}
+        #{{ target_id }}
+      {%- else -%}
+        Scroll Target (No ID set)
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Scroll Target",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "target_id",
+      "label": "Anchor ID",
+      "info": "Enter the ID for this scroll target (without #).",
+      "default": "scroll-target"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scroll Target"
+    }
+  ]
+}
+{% endschema %}

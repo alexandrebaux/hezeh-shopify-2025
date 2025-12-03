@@ -79,6 +79,27 @@
         "padding_bottom": 100
       }
     },
+    "scroll_target_qqCWFC": {
+      "type": "scroll-target",
+      "name": "Scroll Target",
+      "settings": {
+        "target_id": "littoral"
+      }
+    },
+    "scroll_target_Q7EMxP": {
+      "type": "scroll-target",
+      "name": "Scroll Target",
+      "settings": {
+        "target_id": "workwear"
+      }
+    },
+    "scroll_target_ikeFxp": {
+      "type": "scroll-target",
+      "name": "Scroll Target",
+      "settings": {
+        "target_id": "workwear-hiver"
+      }
+    },
     "rich_text_jrUgcp": {
       "type": "rich-text",
       "blocks": {
@@ -477,10 +498,13 @@
     "main",
     "rich_text_3ekaR6",
     "anchors_links",
+    "scroll_target_qqCWFC",
     "rich_text_jrUgcp",
     "grid_v2_FRUprt",
+    "scroll_target_Q7EMxP",
     "rich_text_yc6CKQ",
     "grid_v2_mPnUDQ",
+    "scroll_target_ikeFxp",
     "rich_text_n798Yg",
     "grid_v2_GaMGFk"
   ]
