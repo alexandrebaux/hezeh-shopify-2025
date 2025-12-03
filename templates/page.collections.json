@@ -63,8 +63,8 @@
         "link_qYfyNx": {
           "type": "link",
           "settings": {
-            "label": "Workwear Hiver",
-            "url": "#workwear-hiver"
+            "label": "Édition Été",
+            "url": "#edition-ete"
           }
         }
       },
@@ -359,7 +359,7 @@
       "type": "scroll-target",
       "name": "Scroll Target",
       "settings": {
-        "target_id": "workwear-hiver"
+        "target_id": "edition-ete"
       }
     },
     "rich_text_n798Yg": {
@@ -382,7 +382,7 @@
         "heading_Hk4UEN": {
           "type": "heading",
           "settings": {
-            "heading": "Édition Hiver",
+            "heading": "Édition Été",
             "heading_size": "h1"
           }
         },
