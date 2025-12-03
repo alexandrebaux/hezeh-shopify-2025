@@ -2493,6 +2493,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   grid-area: icons;
   justify-self: end;
   /* padding-right: 0.8rem;*/
+  gap: 25px;
 }
 
 .header__icons .shopify-app-block {
@@ -2522,27 +2523,16 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__icon:hover .icon,
 .modal__close-button:hover .icon {
-  transform: scale(1.07);
+  /*transform: scale(1.07);*/
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 16px;
+  width: auto;
   fill: none;
   vertical-align: middle;
 }
 
-.header__icon,
-.header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
-  padding: 0;
-}
-
-.header__icon--cart {
-  position: relative;
-  margin-right: -1.2rem;
-}
 
 .header__icon--menu[aria-expanded='true']::before {
   content: '';

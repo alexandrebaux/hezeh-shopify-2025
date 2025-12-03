@@ -1,0 +1,48 @@
+{%- comment -%}
+  Renders the language picker for the localization form
+
+  Accepts:
+    - localPosition: pass in the position in which the form is coming up to create specific IDs
+{%- endcomment -%}
+
+<div class="localization-other-languages">
+  {%- for language in localization.available_languages -%}
+      {% if language.iso_code != localization.language.iso_code %}  
+      <a
+        href="#"
+        hreflang="{{ language.iso_code }}"
+        lang="{{ language.iso_code }}"
+        {% if language.iso_code == localization.language.iso_code %}
+          aria-current="true"
+        {% endif %}
+        data-value="{{ language.iso_code }}"
+      >
+        {{ language.iso_code | capitalize }}
+      </a>
+      {% endif %}
+  {%- endfor -%}
+</div>
+<input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
+<button class="localization-form__select" hidden aria-expanded="false"></button>
+<div class="disclosure__list-wrapper" hidden></div>
+
+{%  stylesheet %}
+
+  .localization-other-languages a {
+    font-family: 'schibsted grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: currentColor;
+    text-decoration: none;
+    
+  }
+
+  @media (max-width: 767px) {
+    .localization-other-languages a {
+      display: none;
+    }
+  }
+
+{% endstylesheet %}
