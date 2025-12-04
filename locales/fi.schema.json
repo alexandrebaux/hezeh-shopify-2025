@@ -1468,6 +1468,7 @@
           "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 16:9. [Lisätietoja](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         },
         "custom_title": {
+          "label": "Mukautettu otsikko",
           "content": "Kauppa"
         }
       }

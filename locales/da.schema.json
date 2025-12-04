@@ -1468,6 +1468,7 @@
           "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         },
         "custom_title": {
+          "label": "Tilpasset titel",
           "content": "Shop"
         }
       }

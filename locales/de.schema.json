@@ -1468,6 +1468,7 @@
           "info": "Verwende für Bilder ein Seitenverhältnis von 16:9 für optimale Ergebnisse. [Mehr Informationen](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         },
         "custom_title": {
+          "label": "Benutzerdefinierter Titel",
           "content": "Shop"
         }
       }

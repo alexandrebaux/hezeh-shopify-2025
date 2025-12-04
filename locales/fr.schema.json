@@ -1468,6 +1468,7 @@
           "info": "Pour optimiser vos résultats, utilisez une image ayant un rapport d'aspect de 16:9. [En savoir plus](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         },
         "custom_title": {
+          "label": "Titre personnalisé",
           "content": "Boutique"
         }
       }
