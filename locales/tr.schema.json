@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "Çok büyük"
+        },
+        "options__5": {
+          "label": "Extra large"
+        },
+        "options__6": {
+          "label": "Extra large"
+        },
+        "options__7": {
+          "label": "Extra large"
         }
       },
       "image_shape": {
@@ -1457,6 +1466,10 @@
         "show_collection_image": {
           "label": "Koleksiyon görselini görüntüle",
           "info": "En iyi sonuçlar için 16:9 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "label": "Özel başlık",
+          "content": "Mağaza"
         }
       }
     },
@@ -1541,6 +1554,15 @@
             "option_2": "Standart",
             "option_3": "Toplu"
           }
+        },
+        "show_first_collection": {
+          "label": "Show first collection"
+        },
+        "show_collections_links": {
+          "label": "Show collections links"
+        },
+        "show_empty_collections": {
+          "label": "Show empty collections"
         }
       }
     },
@@ -2889,6 +2911,9 @@
               "options__3": {
                 "label": "Sağ"
               }
+            },
+            "image_limit_height": {
+              "label": "Image limit height"
             }
           }
         }

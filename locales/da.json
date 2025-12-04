@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "Alle kollektioner"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Brug adgangskode for at få adgang til butikken:",

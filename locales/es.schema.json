@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "Extra grande"
+        },
+        "options__5": {
+          "label": "Pretítulo"
+        },
+        "options__6": {
+          "label": "Izquierda"
+        },
+        "options__7": {
+          "label": "Derecha"
         }
       },
       "image_shape": {
@@ -1457,12 +1466,24 @@
         "show_collection_image": {
           "label": "Mostrar imagen de la colección",
           "info": "Para mejores resultados, utiliza una imagen con una relación de aspecto 16:9. [Más información](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "content": "Tienda"
         }
       }
     },
     "main-collection-product-grid": {
       "name": "Cuadrícula de productos",
       "settings": {
+        "show_first_collection": {
+          "label": "Mostrar colección"
+        },
+        "show_collections_links": {
+          "label": "Mostrar enlaces de colecciones"
+        },
+        "show_empty_collections": {
+          "label": "Mostrar colecciones vacías"
+        },
         "products_per_page": {
           "label": "Productos por página"
         },
@@ -2812,6 +2833,9 @@
           "settings": {
             "image": {
               "label": "Imagen"
+            },
+            "image_limit_height": {
+              "label": "Limitar altura de la imagen"
             },
             "heading": {
               "label": "Título"

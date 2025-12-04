@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "Tüm koleksiyonlar"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Parolayı kullanarak mağazaya girin:",

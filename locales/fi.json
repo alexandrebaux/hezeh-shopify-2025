@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "Kaikki kokoelmat"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Siirry kauppaan käyttämällä salasanaa:",

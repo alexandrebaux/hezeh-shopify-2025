@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "Cực lớn"
+        },
+        "options__5": {
+          "label": "Extra large"
+        },
+        "options__6": {
+          "label": "Extra large"
+        },
+        "options__7": {
+          "label": "Extra large"
         }
       },
       "image_shape": {
@@ -1457,6 +1466,10 @@
         "show_collection_image": {
           "label": "Hiển thị hình ảnh bộ sưu tập",
           "info": "Để có kết quả tốt nhất, hãy sử dụng hình ảnh có tỷ lệ khung hình 16:9. [Tìm hiểu thêm](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "label": "Tiêu đề tùy chỉnh",
+          "content": "Cửa hàng"
         }
       }
     },
@@ -1541,6 +1554,15 @@
             "option_2": "Tiêu chuẩn",
             "option_3": "Số lượng lớn"
           }
+        },
+        "show_first_collection": {
+          "label": "Show first collection"
+        },
+        "show_collections_links": {
+          "label": "Show collections links"
+        },
+        "show_empty_collections": {
+          "label": "Show empty collections"
         }
       }
     },
@@ -2889,6 +2911,9 @@
               "options__3": {
                 "label": "Bên phải"
               }
+            },
+            "image_limit_height": {
+              "label": "Image limit height"
             }
           }
         }

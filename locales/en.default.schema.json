@@ -1784,6 +1784,7 @@
           "info": "For best results, use an image with a 16:9 aspect ratio. [Learn more](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         },
         "custom_title": {
+          "label": "Custom title",
           "content": "Shop"
         }
       }

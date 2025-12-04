@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "Erittäin suuri"
+        },
+        "options__5": {
+          "label": "Esiotsikko"
+        },
+        "options__6": {
+          "label": "Vasen"
+        },
+        "options__7": {
+          "label": "Oikea"
         }
       },
       "image_shape": {
@@ -1457,12 +1466,24 @@
         "show_collection_image": {
           "label": "Näytä kokoelman kuva",
           "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 16:9. [Lisätietoja](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "content": "Kauppa"
         }
       }
     },
     "main-collection-product-grid": {
       "name": "Tuoteruudukko",
       "settings": {
+        "show_first_collection": {
+          "label": "Näytä kokoelma"
+        },
+        "show_collections_links": {
+          "label": "Näytä kokoelmalinkit"
+        },
+        "show_empty_collections": {
+          "label": "Näytä tyhjät kokoelmat"
+        },
         "products_per_page": {
           "label": "Tuotteita sivulla"
         },
@@ -2812,6 +2833,9 @@
           "settings": {
             "image": {
               "label": "Kuva"
+            },
+            "image_limit_height": {
+              "label": "Rajoita kuvan korkeutta"
             },
             "heading": {
               "label": "Otsikko"

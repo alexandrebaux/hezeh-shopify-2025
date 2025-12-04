@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "所有收藏"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "使用密碼進入商店：",

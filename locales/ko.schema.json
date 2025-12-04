@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "특대"
+        },
+        "options__5": {
+          "label": "Small"
+        },
+        "options__6": {
+          "label": "Medium"
+        },
+        "options__7": {
+          "label": "Large"
         }
       },
       "image_shape": {
@@ -1457,6 +1466,10 @@
         "show_collection_image": {
           "label": "컬렉션 이미지 표시",
           "info": "최고의 결과를 얻으려면 이미지의 가로 세로 비율을 16:9로 사용하십시오. [자세히 알아보기](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "label": "사용자 지정 제목",
+          "content": "상점"
         }
       }
     },
@@ -1541,6 +1554,15 @@
             "option_2": "표준",
             "option_3": "대량"
           }
+        },
+        "show_first_collection": {
+          "label": "Show first collection"
+        },
+        "show_collections_links": {
+          "label": "Show collections links"
+        },
+        "show_empty_collections": {
+          "label": "Show empty collections"
         }
       }
     },
@@ -2889,6 +2911,9 @@
               "options__3": {
                 "label": "오른쪽"
               }
+            },
+            "image_limit_height": {
+              "label": "Limit image height"
             }
           }
         }

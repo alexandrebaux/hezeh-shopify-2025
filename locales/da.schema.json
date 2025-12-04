@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "Ekstra stor"
+        },
+        "options__5": {
+          "label": "Undertitel"
+        },
+        "options__6": {
+          "label": "Venstre"
+        },
+        "options__7": {
+          "label": "Højre"
         }
       },
       "image_shape": {
@@ -1457,12 +1466,24 @@
         "show_collection_image": {
           "label": "Vis kollektionsbillede",
           "info": "Brug et billede med et højde-bredde-forhold på 16:9 for at opnå det bedste resultat. [Få mere at vide](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "content": "Shop"
         }
       }
     },
     "main-collection-product-grid": {
       "name": "Produktgitter",
       "settings": {
+        "show_first_collection": {
+          "label": "Vis kollektion"
+        },
+        "show_collections_links": {
+          "label": "Vis kollektionslinks"
+        },
+        "show_empty_collections": {
+          "label": "Vis tomme kollektioner"
+        },
         "products_per_page": {
           "label": "Produkter pr. side"
         },
@@ -2812,6 +2833,9 @@
           "settings": {
             "image": {
               "label": "Billede"
+            },
+            "image_limit_height": {
+              "label": "Begræns billedhøjde"
             },
             "heading": {
               "label": "Overskrift"

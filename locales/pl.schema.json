@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "Bardzo duży"
+        },
+        "options__5": {
+          "label": "Extra large"
+        },
+        "options__6": {
+          "label": "Extra, extra large"
+        },
+        "options__7": {
+          "label": "Extra, extra, extra large"
         }
       },
       "image_shape": {
@@ -1457,6 +1466,10 @@
         "show_collection_image": {
           "label": "Pokaż obraz kolekcji",
           "info": "Aby uzyskać najlepsze wyniki, użyj obrazu o współczynniku proporcji 16:9. [Dowiedz się więcej ](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "label": "Niestandardowy tytuł",
+          "content": "Sklep"
         }
       }
     },
@@ -1494,6 +1507,15 @@
         },
         "enable_sorting": {
           "label": "Włącz sortowanie"
+        },
+        "show_first_collection": {
+          "label": "Show first collection"
+        },
+        "show_collections_links": {
+          "label": "Show collections links"
+        },
+        "show_empty_collections": {
+          "label": "Show empty collections"
         },
         "header__1": {
           "content": "Filtrowanie i sortowanie"
@@ -2889,6 +2911,9 @@
               "options__3": {
                 "label": "Prawa strona"
               }
+            },
+            "image_limit_height": {
+              "label": "Limit image height"
             }
           }
         }

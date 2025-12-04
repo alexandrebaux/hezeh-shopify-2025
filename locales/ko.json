@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "모든 컬렉션"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "비밀번호를 사용하여 스토어 입장:",

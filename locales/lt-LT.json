@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "Visos kolekcijos"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Apsilankyti parduotuvėje naudojant slaptažodį:",

@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "Extra groot"
+        },
+        "options__5": {
+          "label": "Small"
+        },
+        "options__6": {
+          "label": "Medium"
+        },
+        "options__7": {
+          "label": "Large"
         }
       },
       "image_shape": {
@@ -1457,6 +1466,10 @@
         "show_collection_image": {
           "label": "Collectieafbeelding weergeven",
           "info": "Gebruik voor de beste resultaten een afbeelding met een beeldverhouding van 16:9. [Meer informatie](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "label": "Aangepaste titel",
+          "content": "Winkel"
         }
       }
     },
@@ -1541,6 +1554,15 @@
             "option_2": "Standaard",
             "option_3": "Bulk"
           }
+        },
+        "show_first_collection": {
+          "label": "Show first collection"
+        },
+        "show_collections_links": {
+          "label": "Show collections links"
+        },
+        "show_empty_collections": {
+          "label": "Show empty collections"
         }
       }
     },
@@ -2889,6 +2911,9 @@
               "options__3": {
                 "label": "Rechts"
               }
+            },
+            "image_limit_height": {
+              "label": "Limit image height"
             }
           }
         }

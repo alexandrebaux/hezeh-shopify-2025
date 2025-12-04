@@ -405,6 +405,15 @@
         "options__4": {
           "label": "Extra velká"
         }
+        ,"options__5": {
+          "label": "XXL"
+        }
+        ,"options__6": {
+          "label": "XXXL"
+        }
+        ,"options__7": {
+          "label": "XXXXL"
+        }
       },
       "image_shape": {
         "options__1": {
@@ -1451,6 +1460,9 @@
         "paragraph": {
           "content": "Přidejte popis nebo obrázek tak, že začnete upravovat příslušnou kolekci. [Zjistit více](https://help.shopify.com/manual/products/collections/collection-layout)"
         },
+        "custom_title": {
+          "content": "Vlastní nadpis kolekce"
+        },
         "show_collection_description": {
           "label": "Zobrazit popis kolekce"
         },
@@ -1465,6 +1477,15 @@
       "settings": {
         "products_per_page": {
           "label": "Počet produktů na stránku"
+        },
+        "show_first_collection": {
+          "label": "Zobrazit první kolekci"
+        },
+        "show_collections_links": {
+          "label": "Zobrazit odkazy na kolekce"
+        },
+        "show_empty_collections": {
+          "label": "Zobrazit prázdné kolekce"
         },
         "image_ratio": {
           "label": "Poměr obrázku",
@@ -2812,6 +2833,9 @@
           "settings": {
             "image": {
               "label": "Obrázek"
+            },
+            "image_limit_height": {
+              "label": "Omezit výšku obrázku"
             },
             "heading": {
               "label": "Nadpis"

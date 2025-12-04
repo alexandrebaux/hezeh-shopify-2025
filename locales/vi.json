@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "Tất cả bộ sưu tập"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Vào cửa hàng bằng mật khẩu:",

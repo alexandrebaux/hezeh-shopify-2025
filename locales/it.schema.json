@@ -404,6 +404,15 @@
         },
         "options__4": {
           "label": "Extra large"
+        },
+        "options__5": {
+          "label": "Small"
+        },
+        "options__6": {
+          "label": "Medium"
+        },
+        "options__7": {
+          "label": "Large"
         }
       },
       "image_shape": {
@@ -1457,6 +1466,10 @@
         "show_collection_image": {
           "label": "Mostra immagine collezione",
           "info": "Per un risultato ottimale utilizza un'immagine con proporzioni 16:9. [Maggiori informazioni](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "custom_title": {
+          "label": "Titolo personalizzato",
+          "content": "Negozio"
         }
       }
     },
@@ -1541,6 +1554,15 @@
             "option_2": "Standard",
             "option_3": "Blocco"
           }
+        },
+        "show_first_collection": {
+          "label": "Show first collection"
+        },
+        "show_collections_links": {
+          "label": "Show collections links"
+        },
+        "show_empty_collections": {
+          "label": "Show empty collections"
         }
       }
     },
@@ -2889,6 +2911,9 @@
               "options__3": {
                 "label": "A destra"
               }
+            },
+            "image_limit_height": {
+              "label": "Limit image height"
             }
           }
         }

@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "collections": {
+    "all_collections_label": "Toate colecțiile"
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Accesați magazinul folosind parola:",
