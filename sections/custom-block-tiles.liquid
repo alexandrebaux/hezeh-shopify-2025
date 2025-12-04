@@ -35,16 +35,16 @@
 <div class="custom-tiles-wrapper">
   <div class="custom-tiles">
     {% if section.settings.image_1 %}
-      <div class="tile"><img src="{{ section.settings.image_1 | img_url: '300x300' }}" alt="Tile 1"></div>
+      <div class="tile"><img src="{{ section.settings.image_1 | image_url: width: 300, height: 300 }}" alt="Tile 1" width="300" height="300"></div>
     {% endif %}
     {% if section.settings.image_2 %}
-      <div class="tile"><img src="{{ section.settings.image_2 | img_url: '300x300' }}" alt="Tile 2"></div>
+      <div class="tile"><img src="{{ section.settings.image_2 | image_url: width: 300, height: 300 }}" alt="Tile 2" width="300" height="300"></div>
     {% endif %}
     {% if section.settings.image_3 %}
-      <div class="tile"><img src="{{ section.settings.image_3 | img_url: '300x300' }}" alt="Tile 3"></div>
+      <div class="tile"><img src="{{ section.settings.image_3 | image_url: width: 300, height: 300 }}" alt="Tile 3" width="300" height="300"></div>
     {% endif %}
     {% if section.settings.image_4 %}
-      <div class="tile"><img src="{{ section.settings.image_4 | img_url: '300x300' }}" alt="Tile 4"></div>
+      <div class="tile"><img src="{{ section.settings.image_4 | image_url: width: 300, height: 300 }}" alt="Tile 4" width="300" height="300"></div>
     {% endif %}
   </div>
 </div>

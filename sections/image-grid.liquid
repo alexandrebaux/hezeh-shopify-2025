@@ -37,32 +37,32 @@
     {% if section.settings.image1 %}
       <div class="image-wrapper">
         <picture>
-          <source srcset="{{ section.settings.image1 | img_url: '2048x2048' | replace: '.jpg', '.webp' }}" type="image/webp">
-          <img src="{{ section.settings.image1 | img_url: '2048x2048' }}" alt="Image 1" loading="lazy">
+          <source srcset="{{ section.settings.image1 | image_url: width: 2048, height: 2048 | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.settings.image1 | image_url: width: 2048, height: 2048 }}" alt="Image 1" loading="lazy" width="2048" height="2048">
         </picture>
       </div>
     {% endif %}
     {% if section.settings.image2 %}
       <div class="image-wrapper">
         <picture>
-          <source srcset="{{ section.settings.image2 | img_url: '2048x2048' | replace: '.jpg', '.webp' }}" type="image/webp">
-          <img src="{{ section.settings.image2 | img_url: '2048x2048' }}" alt="Image 2" loading="lazy">
+          <source srcset="{{ section.settings.image2 | image_url: width: 2048, height: 2048 | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.settings.image2 | image_url: width: 2048, height: 2048 }}" alt="Image 2" loading="lazy" width="2048" height="2048">
         </picture>
       </div>
     {% endif %}
     {% if section.settings.image3 %}
       <div class="image-wrapper">
         <picture>
-          <source srcset="{{ section.settings.image3 | img_url: '2048x2048' | replace: '.jpg', '.webp' }}" type="image/webp">
-          <img src="{{ section.settings.image3 | img_url: '2048x2048' }}" alt="Image 3" loading="lazy">
+          <source srcset="{{ section.settings.image3 | image_url: width: 2048, height: 2048 | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.settings.image3 | image_url: width: 2048, height: 2048 }}" alt="Image 3" loading="lazy" width="2048" height="2048">
         </picture>
       </div>
     {% endif %}
     {% if section.settings.image4 %}
       <div class="image-wrapper">
         <picture>
-          <source srcset="{{ section.settings.image4 | img_url: '2048x2048' | replace: '.jpg', '.webp' }}" type="image/webp">
-          <img src="{{ section.settings.image4 | img_url: '2048x2048' }}" alt="Image 4" loading="lazy">
+          <source srcset="{{ section.settings.image4 | image_url: width: 2048, height: 2048 | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ section.settings.image4 | image_url: width: 2048, height: 2048 }}" alt="Image 4" loading="lazy" width="2048" height="2048">
         </picture>
       </div>
     {% endif %}
