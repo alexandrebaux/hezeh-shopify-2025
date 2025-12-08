@@ -200,8 +200,8 @@
         --spacing-sections-desktop: {{ settings.spacing_sections }}px;
         --spacing-sections-mobile: {% if settings.spacing_sections < 24 %}{{ settings.spacing_sections }}{% else %}{{ settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
 
-        --grid-desktop-vertical-spacing: {{ settings.spacing_grid_vertical }}px;
-        --grid-desktop-horizontal-spacing: {{ settings.spacing_grid_horizontal }}px;
+        --grid-desktop-vertical-spacing: min({{ settings.spacing_grid_vertical }}px, 2rem);
+        --grid-desktop-horizontal-spacing: min({{ settings.spacing_grid_horizontal }}px, 2rem);
         --grid-mobile-vertical-spacing: {{ settings.spacing_grid_vertical | divided_by: 2 }}px;
         --grid-mobile-horizontal-spacing: {{ settings.spacing_grid_horizontal | divided_by: 2 }}px;
 
@@ -262,7 +262,7 @@
         grid-template-columns: 100%;
         min-height: 100%;
         margin: 0;
-        font-size: clamp(14px, 1vw, 16px);
+        font-size: clamp(14px, 1.5vw, 16px);
         letter-spacing: 0.06rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
         font-family: var(--font-body-family);

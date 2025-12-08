@@ -7,20 +7,17 @@
 
 .card {
   text-decoration: none;
-  text-align: var(--text-alignment);
 }
 
 .card__collection {
-    font-family: var(--font-pretitle-family);
-    font-style: var(--font-pretitle-style);
-    font-weight: var(--font-pretitle-weight);
+  font-family: var(--font-pretitle-family);
+  font-style: var(--font-pretitle-style);
+  font-weight: var(--font-pretitle-weight);
 
-    font-size: 12px;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: center;
-    display: block;
-
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  display: block;
 }
 
 .card:not(.ratio) {
@@ -103,7 +100,7 @@
 }
 
 .card-information {
-  text-align: var(--text-alignment);
+
 }
 
 .card__media,
@@ -136,8 +133,6 @@
 }
 
 .card__content {
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) max-content minmax(0, 1fr);
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
@@ -152,16 +147,11 @@
   padding: 1.3rem 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 .card__information * {
   margin: 0 !important;
-}
-
-.card:not(.ratio) > .card__content {
-  grid-template-rows: max-content minmax(0, 1fr) max-content auto;
 }
 
 .card-information .card__information-volume-pricing-note {
@@ -328,8 +318,6 @@
   font-size: 16px;
   line-height: 120%;
   letter-spacing: 0%;
-  text-align: center;
-
 }
 
 .card__heading:last-child {
@@ -455,6 +443,7 @@
 .card--standard > .card__content .card__information {
   padding-left: 0;
   padding-right: 0;
+
 }
 
 .card--card.card--media .card__inner .card__information,
@@ -513,7 +502,6 @@
   font-size: 12px;
   line-height: 120%;
   letter-spacing: 0%;
-  text-align: center;
 
 }
 
