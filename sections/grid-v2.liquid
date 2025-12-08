@@ -118,10 +118,12 @@
     {% endfor %}
 </div>
 
-<style>
+{%- style -%}
+
 .grid-v2-section {
   margin-top: {{ section.settings.margin_top | default: 0 }}px;
   margin-bottom: {{ section.settings.margin_bottom | default: 0 }}px;
+  --page-width: clamp(1220px, 85vw, 140rem);
 }
 .grid-v2 {
   padding-left: 20px;
@@ -176,8 +178,9 @@
     margin-right: 0;
   }
 }
-</style>
-<script>
+{%- endstyle -%}
+
+{% javascript %}
   document.addEventListener('DOMContentLoaded', function() {
     const parallaxItems = document.querySelectorAll('.parallax-item');
 
@@ -212,4 +215,4 @@
       }
   });
 
-</script>
+{% endjavascript %}

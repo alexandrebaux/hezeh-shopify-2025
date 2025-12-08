@@ -3,7 +3,7 @@
   Displays a grid of blocks, each with an image, title, and description.
 {% endcomment %}
 
-<section class="simple-image-grid">
+<div class="simple-image-grid section-{{ section.id }}-padding">
   <div class="simple-image-grid__container">
     {% for block in section.blocks %}
       <div class="simple-image-grid__block" {{ block.shopify_attributes }}> 
@@ -18,11 +18,12 @@
     <div class="simple-image-grid__block"> </div>
     <div class="simple-image-grid__block"> </div>
   </div>
-</section>
+</div>
 
 {% schema %}
 {
   "name": "SimpleImageGrid",
+  "tag": "section",
   "settings": [
     {
       "type": "select",
@@ -104,6 +105,12 @@
 
 {% style %}
 
+@media (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    --page-width: clamp(1000px, 70vw, 140rem);  
+  }
+}
+
 .simple-image-grid {
   padding-top: {{ section.settings.padding_top }}px;
   padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -136,7 +143,7 @@
     aspect-ratio: 16 / 9;
   {% else %}
     aspect-ratio: auto;
-  {% endif %}
+  {% endif %}  
 }
 .simple-image-grid__title {
   font-weight: 300;
@@ -153,6 +160,6 @@
   line-height: 150%;
   letter-spacing: 0%;
   text-align: center;
-
+  margin-bottom: 4rem;
 }
 {% endstyle %}

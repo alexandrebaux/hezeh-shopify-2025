@@ -30,7 +30,7 @@
         "text_jkGnHJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Socks polyjuice scabbers dragon-scale poltergeist ground forbidden owl knut snivellus dog flourish together red hunt fawkes knut mrs bludger start-of-term bathrooms polyjuice he daily daisies bezoar ridgeback aurors shunpike chocolate grayback prophet elemental.</p><p>Beaters lion downfall ‘zis goblet feather glass centaur second 20 biting chocolate voldemort ghost ravenclaw’s ravenclaw’s wand charm parchment knut ginny chasers dobby mrs requirement cleansweep daisies with bezoar cores godric’s yer wormtail gamp’s lily spectacles bonnet shack kedavra mistletoe minister broomstick willow phoenix where tears unwilling mewing every alohamora bright love. </p>"
+            "text": "<p>Bienvenue sur notre page dédiée aux matières. Ici, vous trouverez toutes les informations détaillées sur les tissus que nous proposons pour vous permettre de créer votre pièce sur mesure.</p><p>Parce que chaque pièce est réalisée sur précommande, la sélection de la matière fait partie intégrante de la création. Nous avons regroupé l’ensemble de nos tissus, des plus fluides aux plus structurés, afin que vous puissiez visualiser leurs caractéristiques, comprendre leurs spécificités et choisir celle qui vous correspond le mieux.</p><p>Explorez, découvrez, comparez : votre choix de matière est la première étape vers une création unique, pensée et fabriquée pour vous.</p>"
           }
         }
       },
@@ -81,7 +81,7 @@
         "image_block_JPXdV7": {
           "type": "image-block",
           "settings": {
-            "image": "shopify://shop_images/d332d07c355a6fc5ad7d108bb04c3af4949a608f.jpg",
+            "image": "shopify://shop_images/IMG_0537.jpg",
             "title": "Noir",
             "description": "Cette laine de  est composée de  63% de lin, 25% coton et 12% de soie. Ce tissu provient des stocks dormants d'une maison de luxe française. Fabriquée en Italie."
           }
@@ -110,6 +110,46 @@
         "image_block_JPXdV7",
         "image_block_ae3YtB",
         "image_block_agQraz"
+      ],
+      "name": "SimpleImageGrid",
+      "settings": {
+        "image_ratio": "portrait",
+        "padding_top": 52,
+        "padding_bottom": 32
+      }
+    },
+    "simple_image_grid_jpinTc": {
+      "type": "simple-image-grid",
+      "blocks": {
+        "image_block_BardNE": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0538.jpg",
+            "title": "Basilic chaud",
+            "description": "Cette gabardine de laine est composée de  59% laine et 41% de polyester. Ce tissu provient des stocks dormants d'une maison de luxe française. Fabriqué au Japon."
+          }
+        },
+        "image_block_LUVkXT": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0534.jpg",
+            "title": "Desert Taupe",
+            "description": "Rupture de stock. \n\nCe gaze de laine est composée à 100% de laine. Ce tissu provient des stocks dormants d'une maison de luxe française. Fabriqué au Royaume-Unis."
+          }
+        },
+        "image_block_HEBiGz": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8390.jpg",
+            "title": "Draps anciens",
+            "description": "Ces draps anciens proviennent de greniers et ont traversé plusieurs décennies. Principalement composés de coton et de lin, ils sont ensuite teints avec des colorants végétaux."
+          }
+        }
+      },
+      "block_order": [
+        "image_block_BardNE",
+        "image_block_LUVkXT",
+        "image_block_HEBiGz"
       ],
       "name": "SimpleImageGrid",
       "settings": {
@@ -209,6 +249,7 @@
     "main",
     "rich_text_3ekaR6",
     "SimpleImageGrid_1",
+    "simple_image_grid_jpinTc",
     "rich_text_BWbUD8",
     "featured_collection_gFpHp8"
   ]
