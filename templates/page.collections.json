@@ -23,7 +23,7 @@
         "text_jkGnHJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec neque dignissim, pulvinar eros rutrum, sodales arcu. Nullam magna ex, mattis volutpat enim eu, cursus facilisis ante. Phasellus a ante at ipsum rutrum eleifend.<br/></p>"
+            "text": "<p>HEZEH, ce sont des collections qui s’inspirent de vêtements traditionnels, souvent techniques, conçus au départ pour résister aux exigences du quotidien tout en étant confortables.</p><p>Chaque pièce est le résultat d’un travail de références, d’épure, de matière, de teinture, de travail du détail. À la croisée entre tradition et modernité, HEZEH ce sont des pièces qui tirent leur singularité de leurs histoires ; celles de leur inspiration comme des tissus qui les composent. </p><p>Nous proposons une collection par an, avec des déclinaisons par saison. Certaines pièces existent donc en différentes matières: en lin ou en laine par exemple.</p>"
           }
         }
       },
@@ -39,7 +39,7 @@
         "max_width": 750,
         "title_min_width": 300,
         "title_max_width": 750,
-        "padding_top": 100,
+        "padding_top": 50,
         "padding_bottom": 0
       }
     },
@@ -106,7 +106,7 @@
         "heading_RwfqiJ": {
           "type": "heading",
           "settings": {
-            "heading": "Littoral",
+            "heading": "Les pêcheurs",
             "heading_size": "h1"
           }
         },
@@ -120,13 +120,13 @@
         "text_yEKg8q": {
           "type": "text",
           "settings": {
-            "text": "<p>Cursus fames malesuada commodo rutrum pellentesque volutpat aliquam semper accumsan eleifend velit ullamcorper aliquam proin cursus tempus eu consequat sed suspendisse donec a mus volutpat convallis eleifend vehicula morbi mattis consequat praesent enim suspendisse enim fames convallis vitae enim tincidunt sed sit faucibus pellentesque sed at at proin quis ut.</p>"
+            "text": "<p>Une collection qui rend hommage à l’univers maritime, aux métiers qui y gravitent, aux vêtements qui les accompagnent.</p><p>Les teintes ocres du sable, leurs nuances et infinies variations. La puissance de l’eau, des marées, sa douceur et la fluidité d’une coupe, d’un tombé. Le crochet comme un écho aux filets, une laine bouclée qui rappelle l’écume moutonnante qui vient lécher les galets du rivage. </p>"
           }
         },
         "button_YVMGeL": {
           "type": "button",
           "settings": {
-            "button_label": "Magasiner la collection H.01",
+            "button_label": "Découvrir la collection H.01",
             "button_link": "shopify://collections/frontpage",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -162,7 +162,7 @@
         "image_mRUUfD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/9_1784aad7-f09b-4ee0-bd4c-095d8b4139c1.png",
+            "image": "shopify://shop_images/1.jpg",
             "image_ratio": "square",
             "position": "left",
             "width": "565",
@@ -173,7 +173,7 @@
         "image_kF3VKp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
+            "image": "shopify://shop_images/7.png",
             "image_ratio": "square",
             "position": "right",
             "width": "421",
@@ -184,7 +184,7 @@
         "image_9ReFgY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
+            "image": "shopify://shop_images/3_1564b1c7-4706-4b1d-b40c-6697d5154fd2.png",
             "image_ratio": "square",
             "position": "left",
             "width": "334",
@@ -195,7 +195,7 @@
         "image_7MeNyp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_e3211bad-4b51-4729-a4f2-f17d2f8bb5a8.png",
+            "image": "shopify://shop_images/5.png",
             "image_ratio": "square",
             "position": "center",
             "width": "869",
@@ -258,13 +258,13 @@
         "text_eHMqac": {
           "type": "text",
           "settings": {
-            "text": "<p>Cursus fames malesuada commodo rutrum pellentesque volutpat aliquam semper accumsan eleifend velit ullamcorper aliquam proin cursus tempus eu consequat sed suspendisse donec a mus volutpat convallis eleifend vehicula morbi mattis consequat praesent enim suspendisse enim fames convallis vitae enim tincidunt sed sit faucibus pellentesque sed at at proin quis ut.</p>"
+            "text": "<p>Une collection qui s’inspire du vestiaire traditionnel de métiers artisanaux, et des détails techniques qui racontent leur histoire. </p><p>Une sur-robe qui se porte comme un tablier, une doudoune qui se sangle plus qu’elle ne s’attache, une manchette qui remonte et rappelle presque un gant ; chaque pièce porte en elle la trace d’un univers qui devient une <em>référence</em>, et se doit d’être réinterprétée.</p>"
           }
         },
         "button_UVU4LE": {
           "type": "button",
           "settings": {
-            "button_label": "Magasiner la collection H.02-1",
+            "button_label": "Découvrir la collection H.02",
             "button_link": "shopify://collections/la-collection-h-02",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -300,7 +300,7 @@
         "image_Anrmcw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/9_1784aad7-f09b-4ee0-bd4c-095d8b4139c1.png",
+            "image": "shopify://shop_images/10_e37c4c75-3af0-4040-a7bd-87592fe45917.png",
             "image_ratio": "square",
             "position": "left",
             "width": "565",
@@ -311,7 +311,7 @@
         "image_PeGx7d": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
+            "image": "shopify://shop_images/2_c9da3a00-74df-4412-9c5d-734a0bd176ad.png",
             "image_ratio": "square",
             "position": "right",
             "width": "421",
@@ -322,7 +322,7 @@
         "image_maRrLq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
+            "image": "shopify://shop_images/8_adedd0a5-4f12-4d99-a114-1bc68904bf49.png",
             "image_ratio": "square",
             "position": "left",
             "width": "334",
@@ -333,7 +333,7 @@
         "image_7nw9bJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_e3211bad-4b51-4729-a4f2-f17d2f8bb5a8.png",
+            "image": "shopify://shop_images/241214_HEZEH-H02-edito_3.jpg",
             "image_ratio": "square",
             "position": "center",
             "width": "869",
@@ -382,7 +382,7 @@
         "heading_Hk4UEN": {
           "type": "heading",
           "settings": {
-            "heading": "Édition Été",
+            "heading": "H-02 - édition été",
             "heading_size": "h1"
           }
         },
@@ -396,13 +396,13 @@
         "text_nwp384": {
           "type": "text",
           "settings": {
-            "text": "<p>Cursus fames malesuada commodo rutrum pellentesque volutpat aliquam semper accumsan eleifend velit ullamcorper aliquam proin cursus tempus eu consequat sed suspendisse donec a mus volutpat convallis eleifend vehicula morbi mattis consequat praesent enim suspendisse enim fames convallis vitae enim tincidunt sed sit faucibus pellentesque sed at at proin quis ut.</p>"
+            "text": "<p>La déclinaison estivale de cette collection a été réalisée en collaboration avec l’artiste plasticienne Catherine Cappeau. Les matières, plus légères, sont ici teintées à la main à partir de café, de thé et de brou de noix. La teinture naturelle devient un langage poétique, qui évoque les éléments bruts — le sable, la pierre, le bois, et traduit une esthétique minérale, douce et ancrée dans le réel.</p>"
           }
         },
         "button_tdkg7P": {
           "type": "button",
           "settings": {
-            "button_label": "Magasiner la collection H.02-2",
+            "button_label": "Découvrir la collection H.02-2",
             "button_link": "shopify://collections/h-02-edition-d-ete",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -438,7 +438,7 @@
         "image_XCpipq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/9_1784aad7-f09b-4ee0-bd4c-095d8b4139c1.png",
+            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
             "image_ratio": "square",
             "position": "left",
             "width": "565",
@@ -449,7 +449,7 @@
         "image_TmQQFe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
+            "image": "shopify://shop_images/Design_sans_titre_1_57051e3b-59c6-46ea-a8fe-fa71596ce1c7.png",
             "image_ratio": "square",
             "position": "right",
             "width": "421",
@@ -471,7 +471,7 @@
         "image_y3QNkg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_e3211bad-4b51-4729-a4f2-f17d2f8bb5a8.png",
+            "image": "shopify://shop_images/250520_HEZEH_037.jpg",
             "image_ratio": "square",
             "position": "center",
             "width": "869",

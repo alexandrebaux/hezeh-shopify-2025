@@ -39,8 +39,8 @@
         "max_width": 750,
         "title_min_width": 250,
         "title_max_width": 1000,
-        "padding_top": 100,
-        "padding_bottom": 52
+        "padding_top": 50,
+        "padding_bottom": 0
       }
     },
     "SimpleImageGrid_1": {
@@ -51,7 +51,7 @@
           "settings": {
             "image": "shopify://shop_images/9aa4c95bf23c967ee2d6fcc08d3238fd499ec1d6.png",
             "title": "Coupes",
-            "description": "Des coupes ; inspirées d’un vestiaire technique, souvent traditionnel et artisanal, où chaque détail à sa raison d’être, signature d’une richesse à la fois visuelle et fonctionnelle."
+            "description": "Inspirées d’un vestiaire technique, souvent traditionnel et artisanal, où chaque détail à sa raison d’être, signature d’une richesse à la fois visuelle et fonctionnelle."
           }
         },
         "image_block_ihYDAP": {
@@ -59,7 +59,7 @@
           "settings": {
             "image": "shopify://shop_images/d0b437804986481e913dc295dd910b0fae56e301_1.png",
             "title": "Matières",
-            "description": "Des matières; chutes de grandes maisons, tissus de seconde main ou textiles usuels qui viennent être transformés et réinventés pour laisser à chacun l’occasion d’exprimer toute sa singularité."
+            "description": "Chutes de grandes maisons, tissus de seconde main ou textiles usuels qui viennent être transformés et réinventés pour laisser à chacun l’occasion d’exprimer toute sa singularité."
           }
         },
         "block_1": {
@@ -67,7 +67,7 @@
           "settings": {
             "image": "shopify://shop_images/c82526cba75abcd17bcb9c6fb02d7cf829fbcdac.png",
             "title": "Teintes",
-            "description": "Des teintes ; toujours naturelles, dont les infinies mais subtiles variations sont un écho au vécu et au vivant, ainsi qu’aux éléments qui nous entourent."
+            "description": "Toujours naturelles, dont les infinies mais subtiles variations sont un écho au vécu et au vivant, ainsi qu’aux éléments qui nous entourent."
           }
         }
       },
