@@ -1,8 +1,3 @@
-/* Load Schibsted Grotesk font from Google Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&display=swap');
-
-
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -308,7 +303,10 @@ h2,
 
 h2.pretitle,
 .h2.pretitle  {
-  font-family: "Schibsted Grotesk", sans-serif;
+  font-family: var(--font-pretitle-family);
+  font-style: var(--font-pretitle-style);
+  font-weight: var(--font-pretitle-weight);
+
   font-size: 12px;
 }
 
@@ -400,8 +398,9 @@ blockquote {
 .field__input,
 .form__label,
 .select__select {
-  font-family: 'schibsted grotesk', sans-serif;
-  font-weight: 500;
+  font-family: var(--font-btn-family);
+  font-style: var(--font-btn-style);
+  font-weight: var(--font-btn-weight);
 }
 
 .color-foreground {
@@ -1216,8 +1215,10 @@ button.shopify-payment-button__button--unbranded {
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
 
-  font-family: 'schibsted grotesk', sans-serif;
-  font-weight: 500;
+  font-family: var(--font-btn-family);
+  font-style: var(--font-btn-style);
+  font-weight: var(--font-btn-weight);
+
   font-size: 14px; 
 
   letter-spacing: 0;
@@ -1553,8 +1554,11 @@ details[open] > .share-button__fallback {
   appearance: none;
   background-color: rgb(var(--color-background));
   color: rgb(var(--color-foreground));
-  font-family: 'schibsted grotesk', sans-serif;
-  font-weight: 500;
+
+  font-family: var(--font-btn-family);
+  font-style: var(--font-btn-style);
+  font-weight: var(--font-btn-weight);
+
   font-size: 1.6rem;
   width: 100%;
   box-sizing: border-box;
@@ -1605,8 +1609,11 @@ details[open] > .share-button__fallback {
 }
 
 .select__select {
-  font-family: 'schibsted grotesk', sans-serif;
-  font-weight: 500;
+  
+  font-family: var(--font-btn-family);
+  font-style: var(--font-btn-style);
+  font-weight: var(--font-btn-weight);
+
   font-size: 1.2rem;
   color: rgba(var(--color-foreground), 1);
 }
@@ -2756,8 +2763,11 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item.link {
- font-size: 14px;
- font-family: "Schibsted Grotesk", sans-serif;
+  font-size: 14px;
+
+  font-family: var(--font-menu-family);
+  font-style: var(--font-menu-style);
+  font-weight: var(--font-menu-weight);
 }
 
 .header__menu-item:hover {

@@ -15,7 +15,8 @@
 
 .product__subtitle,
 .product__content-under-price .metafield-rich_text_field > p > strong:first-child,
-.product__description > p > strong:first-child {
+.product__description > p > strong:first-child,
+.product__description > p > b:first-child {
 
     font-weight: 400;
     font-size: 13px;
@@ -25,17 +26,19 @@
     color:  #A19C8C;
 
 }
+
 .product__content-under-price p {
   margin: 0.5rem 0;
 }
+
 .product__content-under-price a {
 
-  font-family: "Schibsted Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-family: var(--font-btn-family);
+  font-style: var(--font-btn-style);
+  font-weight: var(--font-btn-weight);
 
-  font-weight: 400;
+  font-optical-sizing: auto;
+
   font-size: 12px;
   line-height: 120%;
   letter-spacing: 0%;

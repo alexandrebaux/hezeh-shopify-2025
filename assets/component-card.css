@@ -11,8 +11,10 @@
 }
 
 .card__collection {
-    font-family: "Schibsted Grotesk", sans-serif;
-    font-weight: 400;
+    font-family: var(--font-pretitle-family);
+    font-style: var(--font-pretitle-style);
+    font-weight: var(--font-pretitle-weight);
+
     font-size: 12px;
     line-height: 120%;
     letter-spacing: 0%;
@@ -503,8 +505,11 @@
 
 .card-information > .price {
   color: rgb(var(--color-foreground));
-  font-family: "Schibsted Grotesk", sans-serif;
-  font-weight: 400;
+  
+  font-family: var(--font-pretitle-family);
+  font-style: var(--font-pretitle-style);
+  font-weight: var(--font-pretitle-weight); 
+
   font-size: 12px;
   line-height: 120%;
   letter-spacing: 0%;

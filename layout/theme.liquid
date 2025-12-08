@@ -46,14 +46,21 @@
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
-
+    
     {% style %}
 
+      /* FONTFACES_START */
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
+
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
+      {{ settings.type_btn_font | font_face: font_display: 'swap' }}
+      {{ settings.type_pretitle_font | font_face: font_display: 'swap' }}
+      {{ settings.type_menu_font | font_face: font_display: 'swap' }}
+
+      /* FONTFACES_END */
 
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
@@ -102,6 +109,19 @@
       }
 
       :root {
+
+        --font-btn-family: {{ settings.type_btn_font.family }}, {{ settings.type_btn_font.fallback_families }};
+        --font-btn-style: {{ settings.type_btn_font.style }};
+        --font-btn-weight: {{ settings.type_btn_font.weight }};
+
+        --font-pretitle-family: {{ settings.type_pretitle_font.family }}, {{ settings.type_pretitle_font.fallback_families }};
+        --font-pretitle-style: {{ settings.type_pretitle_font.style }};
+        --font-pretitle-weight: {{ settings.type_pretitle_font.weight }};
+
+        --font-menu-family: {{ settings.type_menu_font.family }}, {{ settings.type_menu_font.fallback_families }};
+        --font-menu-style: {{ settings.type_menu_font.style }};
+        --font-menu-weight: {{ settings.type_menu_font.weight }};
+
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};

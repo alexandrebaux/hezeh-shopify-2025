@@ -140,7 +140,40 @@
         "unit": "%",
         "label": "t:settings_schema.typography.settings.body_scale.label",
         "default": 100
-      }
+      },
+      {
+        "type": "header",
+        "content": "Buttons, Selects, Prétitres"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_btn_font",
+        "default": "schibsted_grotesk_n5",
+        "label": "t:settings_schema.typography.settings.type_body_font.label",
+        "info": "t:settings_schema.typography.settings.type_body_font.info"
+      },
+      {
+        "type": "header",
+        "content": "Prétitre"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_pretitle_font",
+        "default": "schibsted_grotesk_n4",
+        "label": "t:settings_schema.typography.settings.type_body_font.label",
+        "info": "t:settings_schema.typography.settings.type_body_font.info"
+      },
+      {
+        "type": "header",
+        "content": "Menu"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_menu_font",
+        "default": "schibsted_grotesk_n4",
+        "label": "t:settings_schema.typography.settings.type_body_font.label",
+        "info": "t:settings_schema.typography.settings.type_body_font.info"
+      },
     ]
   },
   {

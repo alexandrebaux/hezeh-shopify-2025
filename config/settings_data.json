@@ -9,13 +9,13 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/signature-c3_4x_copy.png",
     "logo_width": 175,
     "favicon": "shopify://shop_images/icone-c3_4x_9acccb75-e2db-450f-b46d-73340eab476d.png",
     "type_header_font": "newsreader_n3",
     "heading_scale": 120,
     "type_body_font": "newsreader_n4",
     "body_scale": 105,
+    "type_btn_font": "schibsted_grotesk_n5",
     "page_width": 1400,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 40,
@@ -128,6 +128,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "logo": "shopify://shop_images/signature-c3_4x_copy.png",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -208,7 +209,7 @@
           "background": "#fdfbf5",
           "background_gradient": "#FDFBF5",
           "text": "#212121",
-          "button": "#E4DFD1",
+          "button": "#e4dfd1",
           "button_label": "#212121",
           "secondary_button_label": "#483810",
           "shadow": "#e6d4b0"
