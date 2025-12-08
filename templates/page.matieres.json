@@ -101,27 +101,8 @@
             "title": "Honey Peach",
             "description": "Ce tissu doux et très fluide est composée de 59% viscose et 41% de laine. Ce tissu provient des stocks dormants d'une maison de luxe française. Fabriquée en Italie."
           }
-        }
-      },
-      "block_order": [
-        "image_block_QdMyqN",
-        "image_block_bTYTrj",
-        "image_block_qXA9gC",
-        "image_block_JPXdV7",
-        "image_block_ae3YtB",
-        "image_block_agQraz"
-      ],
-      "name": "SimpleImageGrid",
-      "settings": {
-        "image_ratio": "portrait",
-        "padding_top": 52,
-        "padding_bottom": 32
-      }
-    },
-    "simple_image_grid_jpinTc": {
-      "type": "simple-image-grid",
-      "blocks": {
-        "image_block_BardNE": {
+        },
+        "image_block_3V4U8L": {
           "type": "image-block",
           "settings": {
             "image": "shopify://shop_images/IMG_0538.jpg",
@@ -129,7 +110,7 @@
             "description": "Cette gabardine de laine est composée de  59% laine et 41% de polyester. Ce tissu provient des stocks dormants d'une maison de luxe française. Fabriqué au Japon."
           }
         },
-        "image_block_LUVkXT": {
+        "image_block_Pn98x6": {
           "type": "image-block",
           "settings": {
             "image": "shopify://shop_images/IMG_0534.jpg",
@@ -137,7 +118,7 @@
             "description": "Rupture de stock. \n\nCe gaze de laine est composée à 100% de laine. Ce tissu provient des stocks dormants d'une maison de luxe française. Fabriqué au Royaume-Unis."
           }
         },
-        "image_block_HEBiGz": {
+        "image_block_yyCfzG": {
           "type": "image-block",
           "settings": {
             "image": "shopify://shop_images/IMG_8390.jpg",
@@ -147,9 +128,15 @@
         }
       },
       "block_order": [
-        "image_block_BardNE",
-        "image_block_LUVkXT",
-        "image_block_HEBiGz"
+        "image_block_QdMyqN",
+        "image_block_bTYTrj",
+        "image_block_qXA9gC",
+        "image_block_JPXdV7",
+        "image_block_ae3YtB",
+        "image_block_agQraz",
+        "image_block_3V4U8L",
+        "image_block_Pn98x6",
+        "image_block_yyCfzG"
       ],
       "name": "SimpleImageGrid",
       "settings": {
@@ -249,7 +236,6 @@
     "main",
     "rich_text_3ekaR6",
     "SimpleImageGrid_1",
-    "simple_image_grid_jpinTc",
     "rich_text_BWbUD8",
     "featured_collection_gFpHp8"
   ]
