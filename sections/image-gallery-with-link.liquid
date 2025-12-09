@@ -1,0 +1,319 @@
+{% comment %}
+  Image Gallery with Link Section
+  Displays a title, a link, and a gallery of images
+{% endcomment %}
+
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.js' | asset_url | script_tag }}
+
+<div class="image-gallery-link section-{{ section.id }}-padding">
+  <div class="image-gallery-link__container">
+    
+    {% if section.settings.title != blank %}
+      <h2 class="image-gallery-link__heading">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    {% if section.settings.link_text != blank and section.settings.link_url != blank %}
+      <div class="image-gallery-link__link-wrapper">
+        <a href="{{ section.settings.link_url }}" class="image-gallery-link__link" target="_blank">
+          {{ section.settings.link_text }}
+        </a>
+      </div>
+    {% endif %}
+
+    <!-- Slider main container -->
+    <div class="swiper swiper-{{ section.id }}">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for block in section.blocks %}
+          <div class="swiper-slide image-gallery-link__item" {{ block.shopify_attributes }}>
+            {% if block.settings.image %}
+              <img 
+                src="{{ block.settings.image | image_url: width: 800 }}" 
+                alt="{{ block.settings.image.alt | escape }}" 
+                class="image-gallery-link__image" 
+                loading="lazy"
+                width="800"
+                height="auto"
+                style="object-position: {{ block.settings.image_position_x }}% {{ block.settings.image_position_y }}%;"
+              >
+            {% else %}
+              <div class="image-gallery-link__placeholder">
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            {% endif %}
+            
+          </div>
+        {% endfor %}
+      </div>
+      
+      <!-- If we need pagination -->
+      <div class="swiper-pagination swiper-pagination-{{ section.id }}"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-prev-{{ section.id }}"></div>
+      <div class="swiper-button-next swiper-button-next-{{ section.id }}"></div>
+    </div>
+
+    <script>
+      (function() {
+
+        const swiper = new Swiper('.swiper-{{ section.id }}', {
+          spaceBetween: 20,
+          speed: 5000,
+          direction: 'horizontal',
+          autoplay: { delay: 0 },
+          loop: true,
+          freeMode: true,
+          slidesPerView: 2,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },    
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+            1280: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+            1536: {
+              slidesPerView: 6,
+              spaceBetween: 50,
+            }
+          },
+          
+        });
+      })();
+    </script>
+
+  </div>
+</div>
+
+{% style %}
+.image-gallery-link {
+  border-top: 1px solid #E4DFD1 !important;
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+
+.image-gallery-link__container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.image-gallery-link__heading {
+    font-size: 24px;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    text-align: center;
+    color: currentColor;
+    margin-bottom: 1rem;
+}
+
+.image-gallery-link__link-wrapper {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.image-gallery-link__link {
+
+    display: inline-block;
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: 400;
+
+    color: currentColor;
+}
+
+
+.image-gallery-link .swiper {
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.image-gallery-link .swiper-slide {
+  flex-shrink: 0;
+}
+
+.image-gallery-link .swiper-free-mode > .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.image-gallery-link__item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-gallery-link__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  {% if section.settings.image_ratio == 'portrait' %}
+    aspect-ratio: 3 / 4;
+  {% elsif section.settings.image_ratio == 'square' %}
+    aspect-ratio: 1 / 1;
+  {% elsif section.settings.image_ratio == 'landscape' %}
+    aspect-ratio: 16 / 9;
+  {% else %}
+    aspect-ratio: auto;
+  {% endif %}
+}
+
+.image-gallery-link__placeholder {
+  width: 100%;
+  background-color: rgba(var(--color-foreground), 0.04);
+  {% if section.settings.image_ratio == 'portrait' %}
+    aspect-ratio: 3 / 4;
+  {% elsif section.settings.image_ratio == 'square' %}
+    aspect-ratio: 1 / 1;
+  {% elsif section.settings.image_ratio == 'landscape' %}
+    aspect-ratio: 16 / 9;
+  {% else %}
+    padding-bottom: 100%;
+  {% endif %}
+}
+
+.image-gallery-link__placeholder svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+{% endstyle %}
+
+
+{% schema %}
+{
+  "name": "Image Gallery with Link",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Galerie d'images"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Texte du lien",
+      "default": "Voir plus"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "URL du lien"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "S'adapter à l'image"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait"
+        },
+        {
+          "value": "square",
+          "label": "Carré"
+        },
+        {
+          "value": "landscape",
+          "label": "Paysage"
+        }
+      ],
+      "default": "square",
+      "label": "Ratio d'image"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding haut",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bas",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_position_x",
+          "label": "Position X de l'image",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "image_position_y",
+          "label": "Position Y de l'image",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 0
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Image Gallery with Link",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
