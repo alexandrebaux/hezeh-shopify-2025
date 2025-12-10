@@ -49,7 +49,7 @@
             "options": [
               { "value": "default", "label": "Par défaut" },
               { "value": "square", "label": "Carré" }
-            ],
+            ]
           },
           {
             "type": "select",
@@ -136,15 +136,31 @@
   object-position: center;
 }
 
+.position-left img {
+  margin-right: auto;
+  margin-left: 0;
+}
+.position-center img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.position-right img {
+  margin-left: auto;
+  margin-right: 0;
+}
+
 @media (max-width: 1023px) {
   .grid-v2__item img {
-    width: calc( (var(--img-width, 565) / 869) * 100%);
+    width: calc( (var(--img-width, 565) / 950) * 100%);
     margin-left: auto;
     margin-right: auto;
     height: auto;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: -30px;
+    left: calc( var(--img-offset-x, 0) / 1440 * 100vw);
   }
+
+  
 }
 
 @media (min-width: 1024px) {
@@ -166,22 +182,17 @@
     left: calc(var(--img-offset-x, 0) * 1px);
     margin-top: calc(var(--img-offset-y, 0) * 1px);
   }
-  .position-left img {
-    margin-right: auto;
-  }
-  .position-center img {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .position-right img {
-    margin-left: auto;
-    margin-right: 0;
-  }
+
 }
 {%- endstyle -%}
 
 {% javascript %}
   document.addEventListener('DOMContentLoaded', function() {
+    
+    if (Shopify && Shopify.designMode) {
+      return;
+    }
+
     const parallaxItems = document.querySelectorAll('.parallax-item');
 
       if (window.gsap && window.ScrollTrigger) {
@@ -189,8 +200,24 @@
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: item,
-              start: 'top 80%',
-              end: 'bottom 20%',
+              start: function() {
+
+                if (window.innerWidth < 768) {
+                  return 'top 100%';
+                }
+
+                return 'top 80%';
+
+              },
+              end: function() {
+
+                if (window.innerWidth < 768) {
+                  return 'bottom 0%';
+                }
+
+                return 'bottom 20%';
+
+              },
               scrub: true,
             }
           });
@@ -205,7 +232,15 @@
           tl.fromTo(
             item,
             { opacity: 0.7 },
-            { opacity: 1,  duration: 0.5, ease: 'power2.out' },
+            { opacity: 1,  duration: function() {
+
+              if (window.innerWidth < 768) {
+                return 0.25;
+              }
+
+              return 0.5;
+
+            }, ease: 'power2.out' },
             0
           );
 
