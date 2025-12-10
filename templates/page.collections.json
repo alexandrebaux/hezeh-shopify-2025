@@ -492,6 +492,60 @@
         "margin_bottom": 100,
         "grid_max_width": 1440
       }
+    },
+    "rich_text_yWyhyf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7VmGmU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Collection",
+            "heading_size": "pretitle"
+          }
+        },
+        "heading_tHzh9y": {
+          "type": "heading",
+          "settings": {
+            "heading": "H.02-3 - édition hiver",
+            "heading_size": "h1"
+          }
+        },
+        "text_8krn4h": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cursus fames malesuada commodo rutrum pellentesque volutpat aliquam semper accumsan eleifend velit ullamcorper aliquam proin cursus tempus eu consequat sed suspendisse donec a mus volutpat convallis eleifend vehicula morbi mattis consequat praesent enim suspendisse enim fames convallis vitae enim tincidunt sed sit faucibus pellentesque sed at at proin quis ut.</p>"
+          }
+        },
+        "button_FFhPaP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Découvrir la collection H.02-3",
+            "button_link": "shopify://collections/h-02-3-edition-hiver",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7VmGmU",
+        "heading_tHzh9y",
+        "text_8krn4h",
+        "button_FFhPaP"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "max_width": 750,
+        "title_min_width": 300,
+        "title_max_width": 750,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -506,6 +560,7 @@
     "grid_v2_mPnUDQ",
     "scroll_target_ikeFxp",
     "rich_text_n798Yg",
-    "grid_v2_GaMGFk"
+    "grid_v2_GaMGFk",
+    "rich_text_yWyhyf"
   ]
 }
