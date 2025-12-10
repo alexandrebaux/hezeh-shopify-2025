@@ -362,57 +362,49 @@
         "image_wCrcGE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_8432.jpg",
-            "caption": ""
+            "image": "shopify://shop_images/IMG_8432.jpg"
           }
         },
         "image_GzeHpW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_8369.jpg",
-            "caption": ""
+            "image": "shopify://shop_images/IMG_8369.jpg"
           }
         },
         "image_ta63pC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_4169.jpg",
-            "caption": ""
+            "image": "shopify://shop_images/IMG_4169.jpg"
           }
         },
         "image_H6MVJw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_8390.jpg",
-            "caption": ""
+            "image": "shopify://shop_images/IMG_8390.jpg"
           }
         },
         "image_qQ7Yr4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC09748.jpg",
-            "caption": ""
+            "image": "shopify://shop_images/DSC09748.jpg"
           }
         },
         "image_bt6qM7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC09598.jpg",
-            "caption": ""
+            "image": "shopify://shop_images/DSC09598.jpg"
           }
         },
         "image_E8rKmm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC09652.jpg",
-            "caption": ""
+            "image": "shopify://shop_images/DSC09652.jpg"
           }
         },
         "image_abDxzd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/71d3c8ef44aa01e118f47b37d6e873f9991a1c32.png",
-            "caption": ""
+            "image": "shopify://shop_images/71d3c8ef44aa01e118f47b37d6e873f9991a1c32.png"
           }
         }
       },
