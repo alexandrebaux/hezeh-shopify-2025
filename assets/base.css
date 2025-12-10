@@ -2681,7 +2681,7 @@ details[open] .modal-overlay::after {
 /* Header menu drawer */
 .header__icon--menu .icon {
   display: block;
-  position: absolute;
+  position: relative;
   opacity: 1;
   transform: scale(1);
   transition: transform 150ms ease, opacity 150ms ease;
@@ -2690,12 +2690,14 @@ details[open] .modal-overlay::after {
 details:not([open]) > .header__icon--menu .icon-close,
 details[open] > .header__icon--menu .icon-hamburger {
   visibility: hidden;
+  display: none;
   opacity: 0;
   transform: scale(0.8);
 }
 
 .js details[open]:not(.menu-opening) > .header__icon--menu .icon-close {
   visibility: hidden;
+  display: none;
 }
 
 .js details[open]:not(.menu-opening) > .header__icon--menu .icon-hamburger {
