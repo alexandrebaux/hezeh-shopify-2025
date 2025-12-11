@@ -75,6 +75,7 @@
     },
     "featured-collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -99,6 +100,59 @@
         "swipe_on_mobile": false,
         "padding_top": 16,
         "padding_bottom": 72
+      }
+    },
+    "custom_featured_collection_qe7a96": {
+      "type": "custom-featured-collection",
+      "blocks": {
+        "product_6cCxqG": {
+          "type": "product",
+          "settings": {
+            "product": "short-a-plis-3"
+          }
+        },
+        "product_7MWxBH": {
+          "type": "product",
+          "settings": {
+            "product": "chemise-a-col-haut-en-twill-de-laine"
+          }
+        },
+        "product_qAfKwb": {
+          "type": "product",
+          "settings": {
+            "product": "combinaison-copie"
+          }
+        }
+      },
+      "block_order": [
+        "product_6cCxqG",
+        "product_7MWxBH",
+        "product_qAfKwb"
+      ],
+      "name": "Custom Products",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "description_style": "body",
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "button_link": "shopify://collections/all",
+        "button_label": "Voir la boutique",
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_AkP6dw": {
@@ -260,6 +314,7 @@
     "slideshow",
     "rich_text_EWArWg",
     "featured-collection",
+    "custom_featured_collection_qe7a96",
     "rich_text_AkP6dw",
     "grid_v2_e3QV4i",
     "image_grid_E9DxB6",
