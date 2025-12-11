@@ -99,8 +99,8 @@
 }
 
 .collection__view-all .button {
-  --color-button: 228, 223, 209;
-  background-color: transparent;
+  ---color-button: 228, 223, 209;
+  --background-color: transparent;
 }
 
 .collections-menu-list {
@@ -116,15 +116,8 @@
 }
 
 
-.collections-menu-list :not(.collections-menu-list-active) a {
-  --color-button: 228, 223, 209;
-  --alpha-button-background: 1;
-  --color-shadow: 0, 0, 0;
-  background-color: transparent;
-}
-
 .collections-menu-list .collections-menu-list-active a {
- --color-button: 228, 223, 209;
+  --color-button: 228, 223, 209;
   --alpha-button-background: 1;
 }
 
