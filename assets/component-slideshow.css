@@ -24,7 +24,7 @@ slideshow-component .slideshow.banner {
 .image-limit-height .slideshow__slide,
 .image-limit-height .slideshow__media,
 .image-limit-height img {
-  min-height: 100vh;
+  min-height: 90vh;
   max-height: 100dvh;
   overflow: hidden;
 }
