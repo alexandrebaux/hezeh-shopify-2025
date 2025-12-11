@@ -2772,13 +2772,9 @@ details[open] > .header__submenu {
   color: rgb(var(--color-foreground));
 }
 
-.header__menu-item span {
-  transition: text-decoration var(--duration-short) ease;
-}
-
 .header__menu-item:hover span {
   text-decoration: underline;
-  text-decoration-color: #A19C8C;
+  text-decoration-color: var(--text-decoration-color, #A19C8C);
   text-underline-offset: 0.3rem;
 }
 
@@ -2795,11 +2791,10 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__active-menu-item {
-  transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
   text-decoration: underline;
   text-underline-offset: 0.3rem;
-  text-decoration-color: #A19C8C;
+  text-decoration-color: var(--text-decoration-color, #A19C8C);
 }
 
 .header__menu-item:hover .header__active-menu-item {

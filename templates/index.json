@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Design_sans_titre_10.png",
+            "menu_text_override": "#ffffff",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -29,10 +30,11 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
-        }
+        },
       },
       "block_order": [
-        "slide-0"
+        "slide-0",
+        "slide_zfFLdD"
       ],
       "settings": {
         "layout": "full_bleed",

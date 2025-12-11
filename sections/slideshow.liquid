@@ -112,6 +112,7 @@
         aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
+        data-menu-color="{{ block.settings.menu_text_override.red }},{{ block.settings.menu_text_override.green }},{{ block.settings.menu_text_override.blue }}"
       >
         <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
           {%- if block.settings.image -%}
@@ -245,6 +246,44 @@
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
+
+{%  javascript %}
+  document.addEventListener('DOMContentLoaded', function() {
+    const slideshowComponent = document.querySelector('slideshow-component');
+    const header = document.querySelector('.section-header');
+    
+    if (!slideshowComponent || !header) return;
+    
+    // Add header overlap class
+    header.classList.add('header-over-diapo');
+    
+    function updateMenuColor() {
+      const activeSlide = slideshowComponent.querySelector('.slideshow__slide--active');
+      if (!activeSlide) return;
+      
+      const menuColor = activeSlide.getAttribute('data-menu-color');
+      if (menuColor) {
+        header.style.setProperty('--menu-color', menuColor);
+      }
+    }
+    
+    // Set initial menu color
+    updateMenuColor();
+    
+    // Listen for slide changes
+    slideshowComponent.addEventListener('slideChanged', updateMenuColor);
+
+    // if there is only one slide, ensure the menu color is set
+    const slides = slideshowComponent.querySelectorAll('.slideshow__slide');
+    if (slides.length === 1) {
+      const menuColor = slides[0].getAttribute('data-menu-color');
+      if (menuColor) {
+        header.style.setProperty('--menu-color', menuColor);
+      }
+    }
+
+  });
+{% endjavascript %}
 
 {% schema %}
 {
@@ -407,6 +446,12 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+        },
+        {
+          "type": "color",
+          "id": "menu_text_override",
+          "label": "Couleur du texte du menu, sur ce slide",
+          "default": "#ffffff",
         },
         {
           "type": "inline_richtext",
@@ -576,9 +621,6 @@
     {
       "name": "t:sections.slideshow.presets.name",
       "blocks": [
-        {
-          "type": "slide"
-        },
         {
           "type": "slide"
         }

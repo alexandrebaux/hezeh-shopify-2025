@@ -828,6 +828,12 @@ class SlideshowComponent extends SliderComponent {
     });
     this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
     this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
+
+    // Add active class to slides
+    this.sliderItemsToShow.forEach((slide) => slide.classList.remove('slideshow__slide--active'));
+    if (this.sliderItemsToShow[this.currentPage - 1]) {
+      this.sliderItemsToShow[this.currentPage - 1].classList.add('slideshow__slide--active');
+    }
   }
 
   autoPlayToggle() {
