@@ -30,11 +30,10 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
-        },
+        }
       },
       "block_order": [
-        "slide-0",
-        "slide_zfFLdD"
+        "slide-0"
       ],
       "settings": {
         "layout": "full_bleed",
