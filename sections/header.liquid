@@ -103,9 +103,10 @@
     margin-bottom: {{ section.settings.margin_bottom }}px;
   }
   
-  .section-header svg, 
-  .section-header .header__menu-item,
-  .section-header .header__active-menu-item {
+  .after-1s .section-header svg, 
+  .after-1s .section-header .header__menu-item,
+  .after-1s .section-header .header__active-menu-item,
+  .after-1s .section-header .localization-other-languages a {
     transition: text-decoration 0.5s ease-in-out 1s, color 0.5s ease-in-out 1s;
   }
 
@@ -337,6 +338,18 @@
 {%- endif -%}
 
 {% javascript %}
+
+  (function() {
+
+    // add after-1s class to body after 1 second to delay certain transitions
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        document.body.classList.add('after-1s');
+      }, 1000);
+    });
+
+  })();
+
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
