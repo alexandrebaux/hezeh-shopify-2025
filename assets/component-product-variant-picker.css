@@ -5,7 +5,7 @@ variant-selects {
 }
 
 variant-selects .product-form__input {
-  flex: 0 1 150px;
+  flex: 0 1 auto;
 }
 
 .product--no-media .product-form__input--pill,
