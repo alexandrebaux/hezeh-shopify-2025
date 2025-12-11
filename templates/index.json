@@ -15,7 +15,7 @@
         "slide-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/250520_HEZEH_032_2e750f56-8fb3-401b-a700-060071ade811.jpg",
+            "image": "shopify://shop_images/Design_sans_titre_10.png",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -177,7 +177,7 @@
         "image_Brnrkd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/9_1784aad7-f09b-4ee0-bd4c-095d8b4139c1.png",
+            "image": "shopify://shop_images/1_a363693e-5908-44c9-8c2c-166e8c90757f.jpg",
             "image_ratio": "square",
             "position": "left",
             "width": "565",
@@ -188,7 +188,7 @@
         "image_LHPXPm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
+            "image": "shopify://shop_images/4_c1203d43-c010-406e-ad1d-1466c9574247.jpg",
             "image_ratio": "square",
             "position": "right",
             "width": "421",
@@ -199,7 +199,7 @@
         "image_xKaxjt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_e3211bad-4b51-4729-a4f2-f17d2f8bb5a8.png",
+            "image": "shopify://shop_images/2_b582860b-459f-4554-8676-6ee9945657ea.jpg",
             "image_ratio": "square",
             "position": "center",
             "width": "869",

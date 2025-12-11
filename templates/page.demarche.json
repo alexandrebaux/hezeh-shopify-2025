@@ -362,49 +362,66 @@
         "image_wCrcGE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_8432.jpg"
+            "image": "shopify://shop_images/4_ce0707a8-b23e-4c7e-b6aa-987730ad33af.png",
+            "image_position_x": 50,
+            "image_position_y": 0
           }
         },
         "image_GzeHpW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_8369.jpg"
+            "image": "shopify://shop_images/5_ff003a43-1ff0-401e-93cb-a338d1974b3a.png",
+            "image_position_x": 50,
+            "image_position_y": 0
           }
         },
         "image_ta63pC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_4169.jpg"
+            "image": "shopify://shop_images/6_26f71844-982e-43b6-8a49-b2d559a8c3bc.png",
+            "image_position_x": 50,
+            "image_position_y": 0
           }
         },
         "image_H6MVJw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_8390.jpg"
+            "image": "shopify://shop_images/250520_HEZEH_036.jpg",
+            "image_position_x": 50,
+            "image_position_y": 0
           }
         },
         "image_qQ7Yr4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC09748.jpg"
+            "image": "shopify://shop_images/457398a8b82f39532da5824c4897cbb5ffad8f93.png",
+            "image_position_x": 50,
+            "image_position_y": 0
           }
         },
         "image_bt6qM7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC09598.jpg"
+            "image": "shopify://shop_images/2a1c64ba6087ef8ec1b6122201b72b564c09b149.png",
+            "image_position_x": 50,
+            "image_position_y": 0
           }
         },
         "image_E8rKmm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DSC09652.jpg"
+            "image": "shopify://shop_images/4_84022a84-2355-4b97-8b9c-02a35f5e8abc.png",
+            "image_position_x": 50,
+            "image_position_y": 0
           }
         },
         "image_abDxzd": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/71d3c8ef44aa01e118f47b37d6e873f9991a1c32.png"
+            "image": "shopify://shop_images/71d3c8ef44aa01e118f47b37d6e873f9991a1c32.png",
+            "image_position_x": 50,
+            "image_position_y": 0
           }
         }
       },

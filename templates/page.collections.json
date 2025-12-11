@@ -362,137 +362,6 @@
         "target_id": "edition-ete"
       }
     },
-    "rich_text_n798Yg": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_mEmAgb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Collection",
-            "heading_size": "pretitle"
-          }
-        },
-        "heading_EVMNHV": {
-          "type": "heading",
-          "settings": {
-            "heading": "H0-2.2",
-            "heading_size": "flleft"
-          }
-        },
-        "heading_Hk4UEN": {
-          "type": "heading",
-          "settings": {
-            "heading": "H-02 - édition été",
-            "heading_size": "h1"
-          }
-        },
-        "heading_Nb9mUj": {
-          "type": "heading",
-          "settings": {
-            "heading": "2025",
-            "heading_size": "flright"
-          }
-        },
-        "text_nwp384": {
-          "type": "text",
-          "settings": {
-            "text": "<p>La déclinaison estivale de cette collection a été réalisée en collaboration avec l’artiste plasticienne Catherine Cappeau. Les matières, plus légères, sont ici teintées à la main à partir de café, de thé et de brou de noix. La teinture naturelle devient un langage poétique, qui évoque les éléments bruts — le sable, la pierre, le bois, et traduit une esthétique minérale, douce et ancrée dans le réel.</p>"
-          }
-        },
-        "button_tdkg7P": {
-          "type": "button",
-          "settings": {
-            "button_label": "Découvrir la collection H.02-2",
-            "button_link": "shopify://collections/h-02-edition-d-ete",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_mEmAgb",
-        "heading_EVMNHV",
-        "heading_Hk4UEN",
-        "heading_Nb9mUj",
-        "text_nwp384",
-        "button_tdkg7P"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "max_width": 750,
-        "title_min_width": 300,
-        "title_max_width": 750,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "grid_v2_GaMGFk": {
-      "type": "grid-v2",
-      "blocks": {
-        "image_XCpipq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
-            "image_ratio": "square",
-            "position": "left",
-            "width": "565",
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
-        "image_TmQQFe": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_1_57051e3b-59c6-46ea-a8fe-fa71596ce1c7.png",
-            "image_ratio": "square",
-            "position": "right",
-            "width": "421",
-            "offset_x": -20,
-            "offset_y": -220
-          }
-        },
-        "image_EBJmqx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_b867dd97-c74f-46ef-967f-b27c6dbc52e9.png",
-            "image_ratio": "square",
-            "position": "left",
-            "width": "334",
-            "offset_x": -20,
-            "offset_y": -220
-          }
-        },
-        "image_y3QNkg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/250520_HEZEH_037.jpg",
-            "image_ratio": "square",
-            "position": "center",
-            "width": "869",
-            "offset_x": 0,
-            "offset_y": -100
-          }
-        }
-      },
-      "block_order": [
-        "image_XCpipq",
-        "image_TmQQFe",
-        "image_EBJmqx",
-        "image_y3QNkg"
-      ],
-      "name": "Grid V2",
-      "settings": {
-        "margin_top": 0,
-        "margin_bottom": 100,
-        "grid_max_width": 1440
-      }
-    },
     "rich_text_yWyhyf": {
       "type": "rich-text",
       "blocks": {
@@ -506,7 +375,7 @@
         "heading_tHzh9y": {
           "type": "heading",
           "settings": {
-            "heading": "H.02-3 - édition hiver",
+            "heading": "H.02-2 - édition été",
             "heading_size": "h1"
           }
         },
@@ -519,8 +388,8 @@
         "button_FFhPaP": {
           "type": "button",
           "settings": {
-            "button_label": "Découvrir la collection H.02-3",
-            "button_link": "shopify://collections/h-02-3-edition-hiver",
+            "button_label": "Découvrir la collection H.02-2",
+            "button_link": "shopify://collections/h-02-edition-d-ete",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -579,6 +448,93 @@
         "padding_top": 0,
         "padding_bottom": 40
       }
+    },
+    "rich_text_Btd7AK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aGhcg9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Collection",
+            "heading_size": "pretitle"
+          }
+        },
+        "heading_L4mea6": {
+          "type": "heading",
+          "settings": {
+            "heading": "H.02-3 - édition hiver",
+            "heading_size": "h1"
+          }
+        },
+        "text_VacEGX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cursus fames malesuada commodo rutrum pellentesque volutpat aliquam semper accumsan eleifend velit ullamcorper aliquam proin cursus tempus eu consequat sed suspendisse donec a mus volutpat convallis eleifend vehicula morbi mattis consequat praesent enim suspendisse enim fames convallis vitae enim tincidunt sed sit faucibus pellentesque sed at at proin quis ut.</p>"
+          }
+        },
+        "button_CYB8Q7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Découvrir la collection H.02-3",
+            "button_link": "shopify://collections/h-02-3-edition-hiver",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aGhcg9",
+        "heading_L4mea6",
+        "text_VacEGX",
+        "button_CYB8Q7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "max_width": 750,
+        "title_min_width": 300,
+        "title_max_width": 750,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_gallery_EzTdkU": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_FHLFmM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_5a7e70f6-8ff9-4d2e-99ee-2ec752aa1ec0.png"
+          }
+        },
+        "image_XVCHr4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_11.png"
+          }
+        },
+        "image_9KacAN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_3bf4d4c4-5a73-4c26-87d2-a78fcbb2a7e0.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_FHLFmM",
+        "image_XVCHr4",
+        "image_9KacAN"
+      ],
+      "name": "Image Gallery",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -592,9 +548,9 @@
     "rich_text_yc6CKQ",
     "grid_v2_mPnUDQ",
     "scroll_target_ikeFxp",
-    "rich_text_n798Yg",
-    "grid_v2_GaMGFk",
     "rich_text_yWyhyf",
-    "image_gallery_Aky6VK"
+    "image_gallery_Aky6VK",
+    "rich_text_Btd7AK",
+    "image_gallery_EzTdkU"
   ]
 }
